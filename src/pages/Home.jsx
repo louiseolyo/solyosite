@@ -11,7 +11,7 @@ export default function Home() {
       <header className="fixed w-full bg-cream shadow z-50">
   <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
     <a href="#accueil" className="text-xl font-bold text-sage hover:text-olive transition">
-      Solyo - Louise Durieu
+      SoLyo - Louise Durieu
     </a>
 
     {/* Bouton burger mobile */}
@@ -89,14 +89,14 @@ export default function Home() {
 
   <div className="max-w-3xl mx-auto text-center text-charbon space-y-6 text-md leading-relaxed">
     <p>
-      Je m'appelle Louise Durieu. Je suis depuis quelques années une vraie passionnée de bien-être et aime mettre mon énergie au profit de mes clients (sophronisant ou élève de yoga).
+      Je m'appelle Louise Durieu. Je suis depuis quelques années une vraie passionnée de bien-être et aime mettre mon énergie au profit de mes clients (sophronisants ou élèves de yoga).
       </p>
     <p>
       Après des années de danse et des métiers stressants en tout genre (notamment en cabinet d'expertise-comptable pendant 11 ans), c'est en 2015 que je me tourne naturellement vers le yoga pour ralentir et m'écouter davantage.
 Je me forme et deviens professeur de yoga en 2021. 
 </p>
     <p>
-      C'est le début d'une envie d'aller plus loin encore et de compléter mes connaissances en yoga prénatal, yoga enfants et yoga senior.
+      C'est le début d'une envie d'aller plus loin encore et de compléter mes connaissances en yoga prénatal, yoga enfants et yoga seniors.
 Depuis, j'approfondis régulièrement mes connaissances en formations notamment en anatomie pour accompagner au mieux toutes les morphologies et toutes les pathologies. 
 
 En 2024, je quitte mon métier de responsable administrative et financière pour devenir sophrologue et partage maintenant mon temps entre ces deux activités bien-être (dans divers studios et au cabinet), et la musique qui est ma passion première.
@@ -106,7 +106,7 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
       Je vous guide vers une pratique adaptée à vos besoins le tout dans la détente, la bonne humeur et la douceur que ce soit en yoga ou en sophrologie. L'union des deux disciplines peut mêler le mouvement conscient du yoga à l’écoute intérieure de la sophrologie pour proposer un accompagnement complet, respectueux et humain.
     </p>
     <p>
-      Je travaille aussi bien avec des particuliers qu’en structures ou en entreprise, dans une logique d’ancrage, de mieux-être et d’autonomie.
+      Je travaille aussi bien avec des particuliers qu’en structures ou en entreprises, dans une logique d’ancrage, de mieux-être et d’autonomie.
     </p>
   </div>
 </section>
@@ -299,7 +299,7 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
 </section>
 
 
-<section id="contact" className="bg-white py-20 px-6"> <h2 className="text-3xl font-bold text-center text-terra mb-8">Contact</h2> <div className="max-w-xl mx-auto text-center text-charbon mb-10"> <p className="text-md mb-2">Vous avez une question, vous souhaitez réserver ou simplement en savoir plus ?</p> <p className="text-sm text-sage">Je vous réponds avec plaisir dans les plus brefs délais 🌿</p> </div> <form className="max-w-xl mx-auto bg-white rounded-lg shadow p-6 space-y-4"> <div> <label htmlFor="name" className="block text-sm font-medium text-charbon mb-1">Nom</label> <input type="text" id="name" name="name" className="w-full border border-gray-300 rounded p-2 text-sm" placeholder="Votre nom et prénom" /> </div> <div> <label htmlFor="email" className="block text-sm font-medium text-charbon mb-1">Email</label> <input type="email" id="email" name="email" className="w-full border border-gray-300 rounded p-2 text-sm" placeholder="votreadresse@mail.com" /> </div> <div> <label htmlFor="message" className="block text-sm font-medium text-charbon mb-1">Message</label> <textarea id="message" name="message" rows="4" className="w-full border border-gray-300 rounded p-2 text-sm" placeholder="Écrivez-moi ce que vous souhaitez…"></textarea> </div> <button type="submit" className="bg-terracotta text-white px-6 py-2 rounded hover:bg-sage transition text-sm"> Envoyer le message </button> </form> <div className="mt-10 text-center text-sm text-charbon space-y-1"> <p>📧 louise@solyo.fr</p> <p>📞 06 61 36 68 09</p> <p>📍 Cabinet au 2, rue Denis Papin 92600 Asnières-sur-Seine</p> </div> </section>
+<section id="contact" className="bg-white py-20 px-6"> <h2 className="text-3xl font-bold text-center text-terra mb-8">Contact</h2> <div className="max-w-xl mx-auto text-center text-charbon mb-10"> <p className="text-md mb-2">Vous avez une question, vous souhaitez réserver ou simplement en savoir plus ?</p> <p className="text-sm text-sage">Je vous réponds avec plaisir dans les plus brefs délais 🌿</p> </div> <form className="max-w-xl mx-auto bg-white rounded-lg shadow p-6 space-y-4"> <div> <label htmlFor="name" className="block text-sm font-medium text-charbon mb-1">Nom</label> <input type="text" id="name" name="name" className="w-full border border-gray-300 rounded p-2 text-sm" placeholder="Votre nom et prénom" /> </div> <div> <label htmlFor="email" className="block text-sm font-medium text-charbon mb-1">Email</label> <input type="email" id="email" name="email" className="w-full border border-gray-300 rounded p-2 text-sm" placeholder="votreadresse@mail.com" /> </div> <div> <label htmlFor="message" className="block text-sm font-medium text-charbon mb-1">Message</label> <textarea id="message" name="message" rows="4" className="w-full border border-gray-300 rounded p-2 text-sm" placeholder="Écrivez-moi ce que vous souhaitez…"></textarea> </div> <button type="submit" className="bg-terracotta text-white px-6 py-2 rounded hover:bg-sage transition text-sm"> Envoyer le message </button> </form> <div className="mt-10 text-center text-sm text-charbon space-y-1"> <p>📧 louise@solyo.fr</p> <p>📞 06 61 36 68 09</p> <p>📍 2, rue Denis Papin 92600 Asnières-sur-Seine</p> </div> </section>
 
 <footer className="bg-cream border-top border-olive/30 py-6 px-6">
   <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-charbon">
