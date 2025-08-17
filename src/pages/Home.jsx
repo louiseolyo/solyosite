@@ -87,10 +87,10 @@ export default function Home() {
 
 
       {/* Qui suis-je ? */}
-      <section id="about" className="bg-sage/10 py-20 px-6">
-  <h2 className="text-3xl font-bold text-center text-charbon mb-8">Qui suis-je ?</h2>
+      <section id="about" className="bg-sage py-20 px-6">
+  <h2 className="text-3xl font-bold text-center text-white mb-8">Qui suis-je ?</h2>
 
-  <div className="max-w-3xl mx-auto text-center text-charbon space-y-6 text-md leading-relaxed">
+  <div className="max-w-3xl mx-auto text-center text-white space-y-6 text-md leading-relaxed">
     <p>
       Je m'appelle Louise Durieu. Je suis depuis quelques années une vraie passionnée de bien-être et aime mettre mon énergie au profit de mes clients (sophronisants ou élèves de yoga).
       </p>
