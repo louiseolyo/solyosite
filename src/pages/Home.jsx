@@ -69,19 +69,22 @@ export default function Home() {
 
 
       {/* Page d’accueil */}
-      <section id="accueil"
-  className="bg-cover bg-center bg-no-repeat text-white px-4 py-32 md:py-48 lg:py-56"
+     <section id="accueil"
+  className="bg-cover bg-no-repeat bg-right text-white px-4 py-32 md:py-48 lg:py-56"
   style={{ backgroundImage: "url('/img/monstera-background.jpg')" }}
 >
   <div className="bg-black/40 backdrop-blur-sm rounded-xl max-w-xl mx-auto text-center px-4 py-10">
-    <h1 className="text-3xl md:text-5xl font-bold mb-4 leading-tight"> SoLyo - Louise Durieu</h1>
+    <h1 className="text-3xl md:text-5xl font-bold mb-4 leading-tight">SoLyo - Louise Durieu</h1>
     <h2 className="text-2xl mb-10">Sophrologie · Yoga Vinyasa · Prénatal · Senior</h2>
-    
-    <a href="#rdv" className="inline-block bg-sage hover:bg-olive text-white px-6 py-3 rounded-full text-sm transition">
-          Prendre rendez-vous
-        </a>
+    <a
+      href="#rdv"
+      className="inline-block bg-sage hover:bg-olive text-white px-6 py-3 rounded-full text-sm transition"
+    >
+      Prendre rendez-vous
+    </a>
   </div>
 </section>
+
 
       {/* Qui suis-je ? */}
       <section id="about" className="bg-olive/20 py-20 px-6">
