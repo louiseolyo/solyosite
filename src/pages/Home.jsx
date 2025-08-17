@@ -87,7 +87,7 @@ export default function Home() {
 
 
       {/* Qui suis-je ? */}
-      <section id="about" className="bg-olive/20 py-20 px-6">
+      <section id="about" className="bg-sage/10 py-20 px-6">
   <h2 className="text-3xl font-bold text-center text-charbon mb-8">Qui suis-je ?</h2>
 
   <div className="max-w-3xl mx-auto text-center text-charbon space-y-6 text-md leading-relaxed">
