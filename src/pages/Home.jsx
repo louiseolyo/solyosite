@@ -8,23 +8,29 @@ export default function Home() {
     <div className="min-h-screen bg-cream text-charbon font-sans scroll-smooth">
       
       {/* Barre de navigation */}
-      <header className="fixed w-full bg-cream shadow z-50">
-  <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-    <a href="#accueil" className="text-xl font-bold text-sage hover:text-olive transition">
-      SoLyo - Louise Durieu
+     <header className="fixed w-full bg-cream shadow z-50">
+  <div className="max-w-6xl mx-auto px-4 py-3 md:py-6 flex items-center relative">
+    {/* Logo : h-10 mobile -> h-20 desktop */}
+    <a href="#accueil" className="absolute left-4 top-1/2 -translate-y-1/2">
+      <img
+        src="/img/logo-fonce.png"
+        alt="SoLyo - Louise Durieu"
+        className="h-14 md:h-24 w-auto opacity-90 pointer-events-auto"
+      />
     </a>
 
-    {/* Bouton burger mobile */}
+    {/* Bouton burger : à droite, taille identique (mobile only) */}
     <button
-      className="md:hidden text-sage"
+      className="md:hidden text-sage ml-auto"
       onClick={() => setMenuOpen(!menuOpen)}
+      aria-label="Menu"
     >
       <svg
-        className="w-6 h-6"
+        className="w-7 h-7"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
-        xmlns="https://www.w3.org/2000/svg"
+        xmlns="http://www.w3.org/2000/svg"
       >
         <path
           strokeLinecap="round"
@@ -39,8 +45,8 @@ export default function Home() {
       </svg>
     </button>
 
-    {/* Menu desktop */}
-    <nav className="hidden md:flex space-x-6 text-sm">
+    {/* Menu desktop : texte plus grand dès md */}
+    <nav className="hidden md:flex ml-auto items-center gap-8 text-sm md:text-base lg:text-lg">
       <a href="#about" className="hover:text-sage">Qui suis-je ?</a>
       <a href="#yoga" className="hover:text-sage">Yoga</a>
       <a href="#sophrologie" className="hover:text-sage">Sophrologie</a>
@@ -67,6 +73,7 @@ export default function Home() {
   )}
 </header>
 
+npm run dev
 
       {/* Page d’accueil */}
      <section id="accueil"
@@ -74,7 +81,7 @@ export default function Home() {
   style={{ backgroundImage: "url('/img/monstera-background.jpg')" }}
 >
   <div className="bg-black/40 backdrop-blur-sm rounded-xl max-w-xl mx-auto text-center px-4 py-10">
-    <h1 className="text-3xl md:text-5xl font-bold mb-4 leading-tight">SoLyo - Louise Durieu</h1>
+    <h1 className="text-3xl md:text-5xl mb-4 leading-tight font-perso">SoLyo - Louise Durieu</h1>
     <h2 className="text-2xl mb-10">Sophrologie · Yoga Vinyasa · Prénatal · Senior</h2>
     <a
       href="#rdv"
@@ -302,7 +309,60 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
 </section>
 
 
-<section id="contact" className="bg-white py-20 px-6"> <h2 className="text-3xl font-bold text-center text-terra mb-8">Contact</h2> <div className="max-w-xl mx-auto text-center text-charbon mb-10"> <p className="text-md mb-2">Vous avez une question, vous souhaitez réserver ou simplement en savoir plus ?</p> <p className="text-sm text-sage">Je vous réponds avec plaisir dans les plus brefs délais 🌿</p> </div> <form className="max-w-xl mx-auto bg-white rounded-lg shadow p-6 space-y-4"> <div> <label htmlFor="name" className="block text-sm font-medium text-charbon mb-1">Nom</label> <input type="text" id="name" name="name" className="w-full border border-gray-300 rounded p-2 text-sm" placeholder="Votre nom et prénom" /> </div> <div> <label htmlFor="email" className="block text-sm font-medium text-charbon mb-1">Email</label> <input type="email" id="email" name="email" className="w-full border border-gray-300 rounded p-2 text-sm" placeholder="votreadresse@mail.com" /> </div> <div> <label htmlFor="message" className="block text-sm font-medium text-charbon mb-1">Message</label> <textarea id="message" name="message" rows="4" className="w-full border border-gray-300 rounded p-2 text-sm" placeholder="Écrivez-moi ce que vous souhaitez…"></textarea> </div> <button type="submit" className="bg-terracotta text-white px-6 py-2 rounded hover:bg-sage transition text-sm"> Envoyer le message </button> </form> <div className="mt-10 text-center text-sm text-charbon space-y-1"> <p>📧 louise@solyo.fr</p> <p>📞 06 61 36 68 09</p> <p>📍 2, rue Denis Papin 92600 Asnières-sur-Seine</p> </div> </section>
+{/* Section Contact */}
+<section id="contact" className="bg-white py-20 px-6">
+  <h2 className="text-3xl font-bold text-center text-terra mb-8">Contact</h2>
+
+  <div className="max-w-xl mx-auto text-center text-charbon mb-10">
+    <p className="text-md mb-2">
+      Vous avez une question, vous souhaitez réserver ou simplement en savoir plus ?
+    </p>
+    <p className="text-sm text-sage">
+      Je vous réponds avec plaisir dans les plus brefs délais 🌿
+    </p>
+  </div>
+
+  {/* 🔽 C’est uniquement CE formulaire qu’on remplace */}
+  <form
+    name="contact"
+    method="POST"
+    data-netlify="true"
+    netlify-honeypot="bot-field"
+    action="/merci"
+    className="max-w-xl mx-auto bg-cream rounded-lg shadow p-6 space-y-4"
+  >
+    <input type="hidden" name="form-name" value="contact" />
+    <p className="hidden">
+      <label>Ne pas remplir : <input name="bot-field" /></label>
+    </p>
+
+    <div>
+      <label htmlFor="name" className="block text-sm font-medium text-charbon mb-1">Nom</label>
+      <input type="text" id="name" name="name" className="w-full border border-gray-300 rounded p-2 text-sm" placeholder="Votre nom et prénom" required />
+    </div>
+
+    <div>
+      <label htmlFor="email" className="block text-sm font-medium text-charbon mb-1">Email</label>
+      <input type="email" id="email" name="email" className="w-full border border-gray-300 rounded p-2 text-sm" placeholder="votreadresse@mail.com" required />
+    </div>
+
+    <div>
+      <label htmlFor="message" className="block text-sm font-medium text-charbon mb-1">Message</label>
+      <textarea id="message" name="message" rows="4" className="w-full border border-gray-300 rounded p-2 text-sm" placeholder="Écrivez-moi ce que vous souhaitez…" required />
+    </div>
+
+    <button type="submit" className="bg-terra text-white px-6 py-2 rounded hover:bg-sage transition text-sm">
+      Envoyer le message
+    </button>
+  </form>
+
+  {/* tes infos fixes sous le formulaire */}
+  <div className="mt-10 text-center text-sm text-charbon space-y-1">
+    <p>📧 louise@solyo.fr</p>
+    <p>📞 06 61 36 68 09</p>
+    <p>📍 2, rue Denis Papin 92600 Asnières-sur-Seine</p>
+  </div>
+</section>
 
 <footer className="bg-cream border-top border-olive/30 py-6 px-6">
   <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-charbon">

@@ -13,8 +13,12 @@ export default {
         terra: "#C26B47",
         charbon: "#3E3E3E",
       },
-    },    
+      fontFamily: {
+        perso: ["policelogo", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 }
+
 
