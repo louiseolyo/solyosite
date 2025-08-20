@@ -8,8 +8,7 @@ export default function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/mentions-legales" element={<MentionsLegales />} />
-        <Route path="/merci.html" element={<Merci />} />   {/* ✅ */}  
+        <Route path="/mentions-legales" element={<MentionsLegales />} /> 
       </Routes>
     </Router>
   );
