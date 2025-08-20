@@ -328,7 +328,7 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
     method="POST"
     data-netlify="true"
     netlify-honeypot="bot-field"
-    action="/merci"
+    action="/Merci"
     className="max-w-xl mx-auto bg-cream rounded-lg shadow p-6 space-y-4"
   >
     <input type="hidden" name="form-name" value="contact" />
