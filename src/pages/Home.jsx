@@ -328,10 +328,11 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
     method="POST"
     data-netlify="true"
     netlify-honeypot="bot-field"
-    action="/Merci"
+    action="/merci"
     className="max-w-xl mx-auto bg-cream rounded-lg shadow p-6 space-y-4"
   >
     <input type="hidden" name="form-name" value="contact" />
+    <input type="hidden" name="redirect" value="/merci" />
     <p className="hidden">
       <label>Ne pas remplir : <input name="bot-field" /></label>
     </p>

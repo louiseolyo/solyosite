@@ -1,4 +1,4 @@
-export default function Merci() {
+export default function merci() {
   return (
     <div className="min-h-screen bg-cream py-24 px-6">
       <div className="max-w-xl mx-auto bg-white rounded-xl shadow p-8 text-center">
