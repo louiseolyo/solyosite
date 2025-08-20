@@ -1,4 +1,15 @@
-http://*  https://:splat  301!
-https://solyo.fr/*  https://www.solyo.fr/:splat  301!
-/contact    /merci.html   302
-/*    /index.html   200
+# 1) Forcer HTTPS
+http://*                      https://:splat                 301!
+
+# 2) Rediriger l’apex (racine) vers www
+https://solyo.fr              https://www.solyo.fr           301!
+https://solyo.fr/             https://www.solyo.fr/          301!
+
+# 3) Rediriger tous les chemins de l’apex vers www
+https://solyo.fr/*            https://www.solyo.fr/:splat    301!
+
+# 4) (facultatif) redir d’une page contact statique vers merci.html
+# /contact                     /merci.html                    302
+
+# 5) Fallback SPA React
+/*                           /index.html                     200
