@@ -30,7 +30,7 @@ async function handleSubmit(e) {
     });
     window.location.href = "/merci.html"; // 🔒 redirection fiable
   } catch (err) {
-    alert("Désolé, l’envoi a échoué. Réessaie dans un instant.");
+    alert("Désolée, l’envoi a échoué. Réessayez dans un instant.");
   }
 }
 

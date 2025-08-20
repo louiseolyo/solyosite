@@ -1,4 +1,5 @@
 http://*  https://:splat  301!
 https://solyo.fr/*  https://www.solyo.fr/:splat  301!
+/contact    /merci.html   302
 /*    /index.html   200
 
