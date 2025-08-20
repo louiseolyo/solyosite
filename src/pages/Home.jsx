@@ -4,6 +4,36 @@ import { useState } from "react";
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
 
+function encode(data) {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+}
+
+async function handleSubmit(e) {
+  e.preventDefault();
+  const form = e.target;
+
+  const data = {
+    "form-name": form.getAttribute("name"), // doit être "contact"
+    name: form.name.value,
+    email: form.email.value,
+    message: form.message.value,
+    "bot-field": form["bot-field"]?.value || "",
+  };
+
+  try {
+    await fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode(data),
+    });
+    window.location.href = "/merci.html"; // 🔒 redirection fiable
+  } catch (err) {
+    alert("Désolé, l’envoi a échoué. Réessaie dans un instant.");
+  }
+}
+
   return (
     <div className="min-h-screen bg-cream text-charbon font-sans scroll-smooth">
       
@@ -328,7 +358,8 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
     method="POST"
     data-netlify="true"
     netlify-honeypot="bot-field"
-    action="/merci.html"
+    onSubmit={handleSubmit}
+    action="/"
     className="max-w-xl mx-auto bg-cream rounded-lg shadow p-6 space-y-4"
   >
     <input type="hidden" name="form-name" value="contact" />
