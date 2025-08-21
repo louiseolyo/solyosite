@@ -114,11 +114,13 @@ npm run dev
     <h1 className="text-3xl md:text-5xl mb-4 leading-tight font-perso">SoLyo - Louise Durieu</h1>
     <h2 className="text-2xl mb-10">Sophrologie · Yoga Vinyasa · Prénatal · Senior</h2>
     <a
-      href="#rdv"
-      className="inline-block bg-sage hover:bg-olive text-white px-6 py-3 rounded-full text-sm transition"
-    >
-      Prendre rendez-vous
-    </a>
+  href="https://calendly.com/louise-solyo/seance-sophrologie?preview_source=et_card&month=2025-08"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block bg-sage hover:bg-olive text-white px-6 py-3 rounded-full text-sm transition"
+>
+  Prendre rendez-vous
+</a>
   </div>
 </section>
 
