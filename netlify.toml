@@ -5,3 +5,26 @@ for = "/*"
   Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
   X-Content-Type-Options = "nosniff"
   Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[redirects]]
+  from = "https://solyo.fr"
+  to = "https://www.solyo.fr"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://solyo.fr/"
+  to = "https://www.solyo.fr/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://solyo.fr/*"
+  to = "https://www.solyo.fr/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
