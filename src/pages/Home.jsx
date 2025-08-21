@@ -111,8 +111,31 @@ npm run dev
   style={{ backgroundImage: "url('/img/monstera-background.jpg')" }}
 >
   <div className="bg-black/40 backdrop-blur-sm rounded-xl max-w-xl mx-auto text-center px-4 py-10">
-    <h1 className="text-3xl md:text-5xl mb-4 leading-tight font-perso">SoLyo - Louise Durieu</h1>
-    <h2 className="text-2xl mb-10">Sophrologie · Yoga Vinyasa · Prénatal · Senior</h2>
+    <h1 className="text-center mb-4 leading-tight">
+  <img 
+    src="/img/logo-blanc.png" 
+    alt="SoLyo Logo" 
+    className="mx-auto h-28 md:h-40 w-auto mb-0"
+  />
+  <a href="#about" className="font-perso text-3xl md:text-5xl hover:text-olive/90 transition">
+    Louise Durieu</a>
+</h1>
+    <h2 className="text-xl md:text-2xl mt-4 mb-8 space-x-2">
+  <a 
+    href="#sophrologie" 
+    className="text-white hover:text-olive/90 transition"
+  >
+    Sophrologie
+  </a>
+  <span> · </span>
+  <a 
+    href="#yoga" 
+    className="text-white hover:text-olive/90 transition"
+  >
+    Yoga Vinyasa · Prénatal · Senior
+  </a>
+</h2>
+
     <a
   href="https://calendly.com/louise-solyo/seance-sophrologie?preview_source=et_card&month=2025-08"
   target="_blank"
