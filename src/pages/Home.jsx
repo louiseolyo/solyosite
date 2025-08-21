@@ -389,10 +389,11 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
 
   {/* tes infos fixes sous le formulaire */}
   <div className="mt-10 text-center text-sm text-charbon space-y-1">
-    <p>📧 louise@solyo.fr</p>
-    <p>📞 06 61 36 68 09</p>
-    <p>📍 2, rue Denis Papin 92600 Asnières-sur-Seine</p>
-  </div>
+  <p>📧 <a href="mailto:louise@solyo.fr" className="hover:text-sage underline">louise@solyo.fr</a></p>
+  <p>📞 <a href="tel:+33661366809" className="hover:text-sage underline">06 61 36 68 09</a></p>
+  <p>📍 <a href="https://www.google.com/maps?q=2,+rue+Denis+Papin+92600+Asnières-sur-Seine" target="_blank" rel="noopener noreferrer" className="hover:text-sage underline">2, rue Denis Papin 92600 Asnières-sur-Seine</a></p>
+</div>
+
 </section>
 
 <footer className="bg-cream border-top border-olive/30 py-6 px-6">
