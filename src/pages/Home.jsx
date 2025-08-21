@@ -127,7 +127,8 @@ npm run dev
   >
     Sophrologie
   </a>
-  <span> · </span>
+  <span className="hidden md:inline"> · </span>
+  <br className="md:hidden"/>
   <a 
     href="#yoga" 
     className="text-white hover:text-olive/90 transition"
