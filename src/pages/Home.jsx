@@ -184,7 +184,7 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
   <div className="grid gap-8 md:grid-cols-3">
     
     {/* Carte Vinyasa */}
-    <div id="yoga-vinyasa" className="bg-cream rounded-xl shadow-md overflow-hidden flex flex-col scroll-mt-36 md:scroll-mt-32">
+    <div id="yoga-vinyasa" className="bg-cream rounded-xl shadow-md overflow-hidden flex flex-col scroll-mt-40 md:scroll-mt-32">
       <img src="/img/yoga-vinyasa.jpg" alt="Yoga Vinyasa" className="w-full h-48 object-cover" />
       <div className="p-6 flex flex-col flex-grow">
         <h3 className="text-xl font-semibold text-charbon mb-2">Yoga Vinyasa</h3>
@@ -196,7 +196,7 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
     </div>
 
     {/* Carte Prénatal */}
-    <div id="yoga-prenatal" className="bg-cream rounded-xl shadow-md overflow-hidden flex flex-col scroll-mt-36 md:scroll-mt-32">
+    <div id="yoga-prenatal" className="bg-cream rounded-xl shadow-md overflow-hidden flex flex-col scroll-mt-40 md:scroll-mt-32">
       <img src="/img/yoga-prenatal.jpg" alt="Yoga Prénatal" className="w-full h-48 object-cover" />
       <div className="p-6 flex flex-col flex-grow">
         <h3 className="text-xl font-semibold text-charbon mb-2">Yoga Prénatal</h3>
@@ -208,7 +208,7 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
     </div>
 
     {/* Carte Senior */}
-    <div id="yoga-senior" className="bg-cream rounded-xl shadow-md overflow-hidden flex flex-col scroll-mt-36 md:scroll-mt-32">
+    <div id="yoga-senior" className="bg-cream rounded-xl shadow-md overflow-hidden flex flex-col scroll-mt-40 md:scroll-mt-32">
       <img src="/img/yoga-senior.jpg" alt="Yoga Senior" className="w-full h-48 object-cover" />
       <div className="p-6 flex flex-col flex-grow">
         <h3 className="text-xl font-semibold text-charbon mb-2">Yoga Senior</h3>
