@@ -129,12 +129,13 @@ npm run dev
   </a>
   <span className="hidden md:inline"> · </span>
   <br className="md:hidden"/>
-  <a 
-    href="#yoga" 
-    className="text-white hover:text-olive/90 transition"
-  >
-    Yoga Vinyasa · Prénatal · Senior
-  </a>
+  <a href="#yoga-vinyasa" className="text-white hover:text-olive/90 transition">Yoga Vinyasa</a>
+  <span className="mx-1">·</span>
+
+  <a href="#yoga-prenatal" className="text-white hover:text-olive/90 transition">Prénatal</a>
+  <span className="mx-1">·</span>
+
+  <a href="#yoga-senior" className="text-white hover:text-olive/90 transition">Senior</a>
 </h2>
 
     <a
@@ -183,7 +184,7 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
   <div className="grid gap-8 md:grid-cols-3">
     
     {/* Carte Vinyasa */}
-    <div className="bg-cream rounded-xl shadow-md overflow-hidden flex flex-col">
+    <div id="yoga-vinyasa" className="bg-cream rounded-xl shadow-md overflow-hidden flex flex-col scroll-mt-24 md:scroll-mt-32">
       <img src="/img/yoga-vinyasa.jpg" alt="Yoga Vinyasa" className="w-full h-48 object-cover" />
       <div className="p-6 flex flex-col flex-grow">
         <h3 className="text-xl font-semibold text-charbon mb-2">Yoga Vinyasa</h3>
@@ -195,7 +196,7 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
     </div>
 
     {/* Carte Prénatal */}
-    <div className="bg-cream rounded-xl shadow-md overflow-hidden flex flex-col">
+    <div id="yoga-prenatal" className="bg-cream rounded-xl shadow-md overflow-hidden flex flex-col scroll-mt-24 md:scroll-mt-32">
       <img src="/img/yoga-prenatal.jpg" alt="Yoga Prénatal" className="w-full h-48 object-cover" />
       <div className="p-6 flex flex-col flex-grow">
         <h3 className="text-xl font-semibold text-charbon mb-2">Yoga Prénatal</h3>
@@ -207,7 +208,7 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
     </div>
 
     {/* Carte Senior */}
-    <div className="bg-cream rounded-xl shadow-md overflow-hidden flex flex-col">
+    <div id="yoga-senior" className="bg-cream rounded-xl shadow-md overflow-hidden flex flex-col scroll-mt-24 md:scroll-mt-32">
       <img src="/img/yoga-senior.jpg" alt="Yoga Senior" className="w-full h-48 object-cover" />
       <div className="p-6 flex flex-col flex-grow">
         <h3 className="text-xl font-semibold text-charbon mb-2">Yoga Senior</h3>
@@ -239,7 +240,8 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
       La sophrologie est une méthode psycho-corporelle douce qui aide à mieux gérer ses émotions, son stress, et à se reconnecter à soi.
     </p>
     <p className="text-md font-bold text-sage">
-      Spécialisée en grossesse et maternité et en cancérologie, je vous accompagne quelque soit votre problématique : stress, sommeil, confiance, examens, addictions, nutrition...
+      <p>Je vous accompagne quelque soit votre problématique : stress, sommeil, confiance, examens, addictions, nutrition...</p>
+      <p>Je suis également spécialisée en grossesse et maternité et en cancérologie.</p>
     </p>
   </div>
 
