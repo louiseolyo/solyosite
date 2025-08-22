@@ -181,46 +181,61 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
       {/* Section Yoga */}
 <section id="yoga" className="bg-white py-20 px-6">
   <h2 className="text-3xl font-bold text-center text-sage mb-8">Yoga</h2>
+
   <div className="grid gap-8 md:grid-cols-3">
-    
     {/* Carte Vinyasa */}
-    <div id="yoga-vinyasa" className="bg-cream rounded-xl shadow-md overflow-hidden flex flex-col scroll-mt-40 md:scroll-mt-32">
-      <img src="/img/yoga-vinyasa.jpg" alt="Yoga Vinyasa" className="w-full h-48 object-cover" />
-      <div className="p-6 flex flex-col flex-grow">
-        <h3 className="text-xl font-semibold text-charbon mb-2">Yoga Vinyasa</h3>
-        <p className="text-sage text-sm mb-4">
-          Un yoga dynamique, basé sur la respiration et l'enchaînement des postures (asanas). Il favorise la souplesse, le renforcement musculaire, la concentration et l’ancrage.
-        </p>
-        <span className="mt-auto text-sm text-terracotta">Cours collectifs & individuels, quel que soit votre niveau</span>
+    <div id="yoga-vinyasa" className="-mt-28 pt-28 md:-mt-36 md:pt-36">
+      <div className="bg-cream rounded-xl shadow-md overflow-hidden flex flex-col">
+        <img src="/img/yoga-vinyasa.jpg" alt="Yoga Vinyasa" className="w-full h-48 object-cover" />
+        <div className="p-6 flex flex-col flex-grow">
+          <h3 className="text-xl font-semibold text-charbon mb-2">Yoga Vinyasa</h3>
+          <p className="text-sage text-sm mb-4">
+            Un yoga dynamique, basé sur la respiration et l'enchaînement des postures (asanas).
+            Il favorise la souplesse, le renforcement musculaire, la concentration et l’ancrage.
+          </p>
+          <span className="mt-auto text-sm text-terracotta">
+            Cours collectifs & individuels, quel que soit votre niveau
+          </span>
+        </div>
       </div>
     </div>
 
     {/* Carte Prénatal */}
-    <div id="yoga-prenatal" className="bg-cream rounded-xl shadow-md overflow-hidden flex flex-col scroll-mt-40 md:scroll-mt-32">
-      <img src="/img/yoga-prenatal.jpg" alt="Yoga Prénatal" className="w-full h-48 object-cover" />
-      <div className="p-6 flex flex-col flex-grow">
-        <h3 className="text-xl font-semibold text-charbon mb-2">Yoga Prénatal</h3>
-        <p className="text-sage text-sm mb-4">
-          Une pratique douce ou dynamique selon votre corps et vos envies, avec des postures adaptées, pour vivre la grossesse en conscience, soulager les tensions et se préparer à l’accouchement.
-        </p>
-        <span className="mt-auto text-sm text-terracotta">Cours en petit groupe & individuels, à tout stade de la grossesse</span>
+    <div id="yoga-prenatal" className="-mt-28 pt-28 md:-mt-36 md:pt-36">
+      <div className="bg-cream rounded-xl shadow-md overflow-hidden flex flex-col">
+        <img src="/img/yoga-prenatal.jpg" alt="Yoga Prénatal" className="w-full h-48 object-cover" />
+        <div className="p-6 flex flex-col flex-grow">
+          <h3 className="text-xl font-semibold text-charbon mb-2">Yoga Prénatal</h3>
+          <p className="text-sage text-sm mb-4">
+            Une pratique douce ou dynamique selon votre corps et vos envies, avec des postures adaptées,
+            pour vivre la grossesse en conscience, soulager les tensions et se préparer à l’accouchement.
+          </p>
+          <span className="mt-auto text-sm text-terracotta">
+            Cours en petit groupe & individuels, à tout stade de la grossesse
+          </span>
+        </div>
       </div>
     </div>
 
     {/* Carte Senior */}
-    <div id="yoga-senior" className="bg-cream rounded-xl shadow-md overflow-hidden flex flex-col scroll-mt-40 md:scroll-mt-32">
-      <img src="/img/yoga-senior.jpg" alt="Yoga Senior" className="w-full h-48 object-cover" />
-      <div className="p-6 flex flex-col flex-grow">
-        <h3 className="text-xl font-semibold text-charbon mb-2">Yoga Senior</h3>
-        <p className="text-sage text-sm mb-4">
-          Une pratique adaptée pour entretenir la mobilité, soulager les douleurs, gagner en souplesse, renforcer la masse musculaire, améliorer l’équilibre et cultiver le bien-être global.
-        </p>
-        <span className="mt-auto text-sm text-terracotta">Accessible à tous les âges et quelles que soient vos douleurs</span>
+    <div id="yoga-senior" className="-mt-28 pt-28 md:-mt-36 md:pt-36">
+      <div className="bg-cream rounded-xl shadow-md overflow-hidden flex flex-col">
+        <img src="/img/yoga-senior.jpg" alt="Yoga Senior" className="w-full h-48 object-cover" />
+        <div className="p-6 flex flex-col flex-grow">
+          <h3 className="text-xl font-semibold text-charbon mb-2">Yoga Senior</h3>
+          <p className="text-sage text-sm mb-4">
+            Une pratique adaptée pour entretenir la mobilité, soulager les douleurs, gagner en souplesse,
+            renforcer la masse musculaire, améliorer l’équilibre et cultiver le bien-être global.
+          </p>
+          <span className="mt-auto text-sm text-terracotta">
+            Accessible à tous les âges et quelles que soient vos douleurs
+          </span>
+        </div>
       </div>
     </div>
-
   </div>
 </section>
+
 
 {/* Section Sophrologie */}
 <section id="sophrologie" className="bg-sage/10 py-20 px-6">
