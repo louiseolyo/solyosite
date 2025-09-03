@@ -156,15 +156,15 @@ npm run dev
 
   <div className="max-w-3xl mx-auto text-center text-white space-y-6 text-md leading-relaxed">
     <p>
-      Je m'appelle Louise Durieu. Je suis depuis quelques années une vraie passionnée de bien-être et aime mettre mon énergie au profit de mes clients (sophronisants ou élèves de yoga).
+      Je m'appelle Louise Durieu. J'ai toujours eu a cœur de prendre soin des autres et aime mettre mon énergie au profit de mes clients (sophronisants ou élèves de yoga).
       </p>
     <p>
-      Après des années de danse et des métiers stressants en tout genre (notamment en cabinet d'expertise-comptable pendant 11 ans), c'est en 2015 que je me tourne naturellement vers le yoga pour ralentir et m'écouter davantage.
+      Après des années de danse (niveau professionnel, castings...) et de comptabilité et finances en parallèle, c'est en 2015 que je me tourne vers le yoga pour ralentir et m'écouter davantage.
 Je me forme et deviens professeur de yoga en 2021. 
 </p>
     <p>
-      C'est le début d'une envie d'aller plus loin encore et de compléter mes connaissances en yoga prénatal, yoga enfants et yoga seniors.
-Depuis, j'approfondis régulièrement mes connaissances en formations notamment en anatomie pour accompagner au mieux toutes les morphologies et toutes les pathologies. 
+      J'ai rapidement envie de pouvoir ouvrir mes cours au plus grand nombre et me forme donc en yoga prénatal, yoga enfants et yoga seniors en 2021 également. L'expérience inoubliable de ma grossesse en 2019 me donne particulièrement envie d'accompagner les femmes enceintes et venant d'accoucher.
+Depuis, je continue de me former régulièrement notamment en anatomie pour accompagner au mieux toutes les morphologies et toutes les pathologies. 
 
 En 2024, je quitte mon métier de responsable administrative et financière pour devenir sophrologue et partage maintenant mon temps entre ces deux activités bien-être (dans divers studios et au cabinet), et la musique qui est ma passion première.
 
@@ -193,7 +193,7 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
             Un yoga dynamique, basé sur la respiration et l'enchaînement des postures (asanas).
             Il favorise la souplesse, le renforcement musculaire, la concentration et l’ancrage.
           </p>
-          <span className="mt-auto text-sm text-terracotta">
+          <span className="mt-auto text-sm text-charbon">
             Cours collectifs & individuels, quel que soit votre niveau
           </span>
         </div>
@@ -210,7 +210,7 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
             Une pratique douce ou dynamique selon votre corps et vos envies, avec des postures adaptées,
             pour vivre la grossesse en conscience, soulager les tensions et se préparer à l’accouchement.
           </p>
-          <span className="mt-auto text-sm text-terracotta">
+          <span className="mt-auto text-sm text-charbon">
             Cours en petit groupe & individuels, à tout stade de la grossesse
           </span>
         </div>
@@ -227,7 +227,7 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
             Une pratique adaptée pour entretenir la mobilité, soulager les douleurs, gagner en souplesse,
             renforcer la masse musculaire, améliorer l’équilibre et cultiver le bien-être global.
           </p>
-          <span className="mt-auto text-sm text-terracotta">
+          <span className="mt-auto text-sm text-charbon">
             Accessible à tous les âges et quelles que soient vos douleurs
           </span>
         </div>
@@ -255,7 +255,7 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
       La sophrologie est une méthode psycho-corporelle douce qui aide à mieux gérer ses émotions, son stress, et à se reconnecter à soi.
     </p>
     <p className="text-md font-bold text-sage">
-      <p>Je vous accompagne quelque soit votre problématique : stress, sommeil, confiance, examens, addictions, nutrition...</p>
+      <p>Je vous accompagne quelle que soit votre problématique : stress, sommeil, confiance, examens, addictions, nutrition...</p>
       <p>Je suis également spécialisée en grossesse et maternité et en cancérologie.</p>
     </p>
   </div>
@@ -317,15 +317,15 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
       <div className="bg-cream rounded-lg p-6 shadow">
         <h4 className="font-semibold text-sage mb-2">Cours individuels</h4>
         <ul className="text-sm text-charbon space-y-1">
-          <li>🧘‍♀️ Au cabinet : <span className="text-terracotta">50 €</span></li>
-          <li>🏠 À domicile : <span className="text-terracotta">60 €</span></li>
+          <li>🧘‍♀️ Au cabinet : <span className="text-charbon">50 €</span></li>
+          <li>🏠 À domicile : <span className="text-charbon">60 €</span></li>
         </ul>
       </div>
       <div className="bg-cream rounded-lg p-6 shadow">
         <h4 className="font-semibold text-sage mb-2">Cours collectifs</h4>
         <ul className="text-sm text-charbon space-y-1">
-          <li>🧘‍♂️ Au cabinet : <span className="text-terracotta">50€/h (15€/personne à partir de 4 personnes)</span></li>
-          <li>🏠 À domicile : <span className="text-terracotta">60€/h (15€/personne au delà de 4 personnes)</span></li>
+          <li>🧘‍♂️ Au cabinet : <span className="text-charbon">50€/h (15€/personne à partir de 4 personnes)</span></li>
+          <li>🏠 À domicile : <span className="text-charbon">60€/h (15€/personne au delà de 4 personnes)</span></li>
         </ul>
       </div>
       
@@ -340,14 +340,15 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
       <div className="bg-cream rounded-lg p-6 shadow">
         <h4 className="font-semibold text-sage mb-2">Séances individuelles</h4>
         <ul className="text-sm text-charbon space-y-1">
-          <li>Au cabinet : <span className="text-terracotta">60 € (1ère séance : 65€)</span></li>
-          <li>À domicile (proche cabinet) : <span className="text-terracotta">75 € (1ère séance : 85 €)</span></li>
+          <li>🧘‍♂️ Au cabinet : <span className="text-charbon">60 € (1ère séance : 65€)</span></li>
+          <li>🏠 À domicile (proche cabinet) : <span className="text-charbon">75 € (1ère séance : 85 €)</span></li>
+          <li>Tarifs réduits étudiants et demandeurs d'emploi sur demande <span className="text-terra"></span></li>
         </ul>
       </div>
       <div className="bg-cream rounded-lg p-6 shadow">
         <h4 className="font-semibold text-sage mb-2">Séances collectives</h4>
         <ul className="text-sm text-charbon space-y-1">
-          <li>En groupe (cabinet) : <span className="text-terracotta">20€/personne (3 personnes minimum)</span></li>
+          <li>🧘‍♂️ En groupe (cabinet) : <span className="text-charbon">20€/personne (3 personnes minimum)</span></li>
         </ul>
       </div>
     </div>
@@ -357,7 +358,7 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
   <div className="max-w-4xl mx-auto mt-12 text-center text-sm text-charbon">
     <p>
       💼 Cours et séances collectives en entreprise ou en structure (yoga ou sophrologie) : 
-      <span className="text-terracotta font-medium"> devis sur demande</span>.
+      <span className="text-terra font-medium"> devis sur demande</span>.
     </p>
   </div>
 </section>
@@ -374,7 +375,7 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
       href="https://calendly.com/louise-solyo/seance-sophrologie?preview_source=et_card&month=2025-08"
       target="_blank"
       rel="noopener noreferrer"
-      className="bg-sage text-white px-6 py-3 rounded-full hover:bg-terracotta transition text-sm"
+      className="bg-sage text-white px-6 py-3 rounded-full hover:bg-terra transition text-sm"
     >
       Réserver un créneau via Calendly
     </a>
