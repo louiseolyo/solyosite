@@ -156,7 +156,7 @@ npm run dev
 
   <div className="max-w-3xl mx-auto text-center text-white space-y-6 text-md leading-relaxed">
     <p>
-      Je m'appelle Louise Durieu. J'ai toujours eu a cœur de prendre soin des autres et aime mettre mon énergie au profit de mes clients (sophronisants ou élèves de yoga).
+      Je m'appelle Louise Durieu. J'ai toujours eu à cœur de prendre soin des autres et aime mettre mon énergie au profit de mes clients (sophronisants ou élèves de yoga).
       </p>
     <p>
       Après des années de danse (niveau professionnel, castings...) et de comptabilité et finances en parallèle, c'est en 2015 que je me tourne vers le yoga pour ralentir et m'écouter davantage.
