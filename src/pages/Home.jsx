@@ -154,7 +154,19 @@ npm run dev
       <section id="about" className="bg-sage py-20 px-6">
   <h2 className="text-3xl font-bold text-center text-white mb-8">Qui suis-je ?</h2>
 
-  <div className="max-w-3xl mx-auto text-center text-white space-y-6 text-md leading-relaxed">
+  <div className="max-w-5xl mx-auto space-y-10">
+    {/* Bloc haut : photo + 2 premiers paragraphes */}
+<div className="grid md:grid-cols-3 gap-10">
+      {/* Photo */}
+      <div className="md:col-span-1 flex items-center">
+        <img 
+          src="/img/moi.jpg" 
+          alt="Louise Durieu" 
+          className="w-full h-auto rounded-xl object-cover shadow-lg"
+        />
+      </div>
+   {/* Texte à droite */}
+     <div className="md:col-span-2 space-y-6 text-md text-white flex flex-col justify-center leading-relaxed text-justify">
     <p>
       Je m'appelle Louise Durieu. J'ai toujours eu à cœur de prendre soin des autres et aime mettre mon énergie au profit de mes clients (sophronisants ou élèves de yoga).
       </p>
@@ -163,18 +175,24 @@ npm run dev
 Je me forme et deviens professeur de yoga en 2021. 
 </p>
     <p>
-      J'ai rapidement envie de pouvoir ouvrir mes cours au plus grand nombre et me forme donc en yoga prénatal, yoga enfants et yoga seniors en 2021 également. L'expérience inoubliable de ma grossesse en 2019 me donne particulièrement envie d'accompagner les femmes enceintes et venant d'accoucher.
+      Je me forme la même année en yoga prénatal, yoga enfants et yoga seniors. L'expérience inoubliable de ma grossesse en 2019 me donne particulièrement envie d'accompagner les femmes enceintes et venant d'accoucher.
 Depuis, je continue de me former régulièrement notamment en anatomie pour accompagner au mieux toutes les morphologies et toutes les pathologies. 
 
 En 2024, je quitte mon métier de responsable administrative et financière pour devenir sophrologue et partage maintenant mon temps entre ces deux activités bien-être (dans divers studios et au cabinet), et la musique qui est ma passion première.
 
     </p>
+    </div>
+    </div>
+
+    {/* Bloc bas : texte pleine largeur */}
+    <div className="space-y-6 text-md text-white leading-relaxed text-justify">
     <p>
       Je vous guide vers une pratique adaptée à vos besoins le tout dans la détente, la bonne humeur et la douceur que ce soit en yoga ou en sophrologie. L'union des deux disciplines peut mêler le mouvement conscient du yoga à l’écoute intérieure de la sophrologie pour proposer un accompagnement complet, respectueux et humain.
     </p>
     <p>
       Je travaille aussi bien avec des particuliers qu’en structures ou en entreprises, dans une logique d’ancrage, de mieux-être et d’autonomie.
     </p>
+    </div>
   </div>
 </section>
 
