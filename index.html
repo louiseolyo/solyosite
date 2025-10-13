@@ -2,19 +2,69 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/png" href="/img/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SoLyo - Yoga & Sophrologie</title>
+
+    <!-- SEO de base -->
+    <title>SoLyo – Sophrologie & Yoga à Asnières-sur-Seine | Louise Durieu</title>
+    <meta name="description" content="Louise Durieu (SoLyo) – sophrologue et professeure de yoga à Asnières-sur-Seine. Sophrologie, yoga vinyasa, prénatal et senior : au cabinet, à domicile ou en entreprise." />
+    <link rel="canonical" href="https://www.solyo.fr/" />
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="SoLyo" />
+    <meta property="og:title" content="SoLyo – Sophrologie & Yoga à Asnières-sur-Seine" />
+    <meta property="og:description" content="Séances de sophrologie et cours de yoga (vinyasa, prénatal, senior) avec Louise Durieu à Asnières-sur-Seine." />
+    <meta property="og:url" content="https://www.solyo.fr/" />
+    <meta property="og:image" content="https://www.solyo.fr/img/monstera-background.jpg" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SoLyo – Sophrologie & Yoga à Asnières-sur-Seine" />
+    <meta name="twitter:description" content="Séances de sophrologie et cours de yoga avec Louise Durieu." />
+    <meta name="twitter:image" content="https://www.solyo.fr/img/monstera-background.jpg" />
+
+    <!-- Données structurées (SEO local) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "SoLyo - Louise Durieu",
+      "description": "Sophrologie et Yoga (vinyasa, prénatal, senior) à Asnières-sur-Seine.",
+      "url": "https://www.solyo.fr/",
+      "telephone": "+33661366809",
+      "email": "louise@solyo.fr",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2, rue Denis Papin",
+        "postalCode": "92600",
+        "addressLocality": "Asnières-sur-Seine",
+        "addressCountry": "FR"
+      },
+      "image": "https://www.solyo.fr/img/monstera-background.jpg",
+      "areaServed": "Asnières-sur-Seine",
+      "sameAs": [
+        "https://www.instagram.com/toncompte", 
+        "https://www.facebook.com/toncompte"
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- Script Elfsight -->
     <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+
+    <!-- Formulaire Netlify caché (doit être DANS le body) -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+    </form>
+
+    <!-- Entrée Vite -->
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
 
-<form name="contact" netlify netlify-honeypot="bot-field" hidden>
-  <input type="text" name="name" />
-  <input type="email" name="email" />
-  <textarea name="message"></textarea>
-</form>
