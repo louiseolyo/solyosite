@@ -269,12 +269,18 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
   </div>
 
   <div className="max-w-4xl mx-auto text-center text-charbon mb-12">
+    <p className="text-md font-bold text-terra mb-4">
+      Qu'est ce que la sophrologie ?
+    </p>
     <p className="text-md mb-4">
-      La sophrologie est une méthode psycho-corporelle douce qui aide à mieux gérer ses émotions, son stress, et à se reconnecter à soi.
+      La sophrologie est une méthode psycho-corporelle douce et adaptable à tous, composée de techniques guidées par la voix du sophrologue. On y retrouve des exercices de respiration, des mouvements corporels doux et des vivances positives (la vivance, c'est vivre ce qui se vit en nous, avec nos 5 sens).
+    </p>
+     <p className="text-md mb-4">
+      La sophrologie permet en harmonisant le corps et l'esprit, de découvrir qui l'on est vraiment, ses propres valeurs, et de trouver nos propres ressources, toutes nos capacités pour mieux vivre au présent, dépasser chaque obstacle de la vie avec plus de force et de sérénité, et se projeter de façon plus positive dans notre vie future.
     </p>
     <p className="text-md font-bold text-sage">
-      <p>Je vous accompagne quelle que soit votre problématique : stress, sommeil, confiance, examens, addictions, nutrition...</p>
-      <p>Je suis également spécialisée en grossesse et maternité et en cancérologie.</p>
+      <p>Spécialisée en grossesse et maternité, et en cancérologie, je peux vous accompagner quelle que soit votre problématique : stress, sommeil, confiance, examens, addictions, nutrition...</p>
+      
     </p>
   </div>
 
@@ -385,9 +391,9 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
 <section id="rdv" className="bg-cream py-20 px-6">
   <h2 className="text-3xl font-bold text-center text-terra mb-8">Prendre rendez-vous</h2>
 
-  <div className="max-w-xl mx-auto text-center">
+  <div className="max-w-4xl mx-auto text-center">
     <p className="text-charbon mb-6 text-sm">
-      Choisissez simplement votre créneau selon vos disponibilités :
+      Choisissez simplement votre créneau selon vos disponibilités pour les rendez-vous au cabinet :
     </p>
     <a
       href="https://calendly.com/louise-solyo/seance-sophrologie?preview_source=et_card&month=2025-08"
@@ -397,6 +403,9 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
     >
       Réserver un créneau via Calendly
     </a>
+    <p className="mt-10 text-charbon text-sm">
+      Pour les rendez-vous en visio ou à domicile, merci de me contacter par téléphone ou par mail afin de définir le créneau qui vous convient.
+    </p>
   </div>
 </section>
 
