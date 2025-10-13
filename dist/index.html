@@ -2,21 +2,78 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <!-- Favicons SoLyo -->
+<link rel="apple-touch-icon" sizes="180x180" href="/img/favicon-180x180.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png" />
+<link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+<meta name="theme-color" content="#ffffff" />
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SoLyo - Yoga & Sophrologie</title>
+
+    <!-- SEO de base -->
+    <title>SoLyo – Sophrologie & Yoga à Asnières-sur-Seine | Louise Durieu</title>
+    <meta name="description" content="Louise Durieu (SoLyo) – sophrologue et professeure de yoga à Asnières-sur-Seine. Sophrologie, yoga vinyasa, prénatal et senior : au cabinet, à domicile ou en entreprise." />
+    <link rel="canonical" href="https://www.solyo.fr/" />
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="SoLyo" />
+    <meta property="og:title" content="SoLyo – Sophrologie & Yoga à Asnières-sur-Seine" />
+    <meta property="og:description" content="Séances de sophrologie et cours de yoga (vinyasa, prénatal, senior) avec Louise Durieu à Asnières-sur-Seine." />
+    <meta property="og:url" content="https://www.solyo.fr/" />
+    <meta property="og:image" content="https://www.solyo.fr/img/monstera-background.jpg" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SoLyo – Sophrologie & Yoga à Asnières-sur-Seine" />
+    <meta name="twitter:description" content="Séances de sophrologie et cours de yoga avec Louise Durieu." />
+    <meta name="twitter:image" content="https://www.solyo.fr/img/monstera-background.jpg" />
+
+    <!-- Données structurées (SEO local) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "SoLyo - Louise Durieu",
+      "description": "Sophrologie et Yoga (vinyasa, prénatal, senior) à Asnières-sur-Seine.",
+      "url": "https://www.solyo.fr/",
+      "telephone": "+33661366809",
+      "email": "louise@solyo.fr",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2, rue Denis Papin",
+        "postalCode": "92600",
+        "addressLocality": "Asnières-sur-Seine",
+        "addressCountry": "FR"
+      },
+      "image": "https://www.solyo.fr/img/monstera-background.jpg",
+      "areaServed": "Asnières-sur-Seine",
+      "sameAs": [
+        "https://www.instagram.com/toncompte", 
+        "https://www.facebook.com/toncompte"
+      ]
+    }
+    </script>
     <script type="module" crossorigin src="/assets/index-7cc8acd9.js"></script>
     <link rel="stylesheet" href="/assets/index-2de9f174.css">
   </head>
   <body>
     <div id="root"></div>
-    
+
+    <!-- Script Elfsight -->
     <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+
+    <!-- Formulaire Netlify caché (doit être DANS le body) -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+    </form>
+
+    <!-- Entrée Vite -->
+    
   </body>
 </html>
 
-<form name="contact" netlify netlify-honeypot="bot-field" hidden>
-  <input type="text" name="name" />
-  <input type="email" name="email" />
-  <textarea name="message"></textarea>
-</form>
