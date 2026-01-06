@@ -1,8 +1,28 @@
 // src/pages/Home.jsx
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
+
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace("#", "");
+      const el = document.getElementById(id);
+      if (el) {
+        // petit timeout pour laisser le DOM se charger
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      }
+    } else {
+      // si pas de hash, on remonte en haut
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, [location]);
 
 function encode(data) {
   return Object.keys(data)
@@ -36,74 +56,106 @@ async function handleSubmit(e) {
 
   return (
     <div className="min-h-screen bg-cream text-charbon font-sans scroll-smooth">
-      
       {/* Barre de navigation */}
-     <header className="fixed w-full bg-cream shadow z-50">
-  <div className="max-w-6xl mx-auto px-4 py-3 md:py-6 flex items-center relative">
-    {/* Logo : h-10 mobile -> h-20 desktop */}
-    <a href="#accueil" className="absolute left-4 top-1/2 -translate-y-1/2">
-      <img
-        src="/img/logo-fonce.png"
-        alt="SoLyo - Louise Durieu"
-        className="h-14 md:h-24 w-auto opacity-90 pointer-events-auto"
-      />
-    </a>
+      <header className="fixed w-full bg-cream shadow z-50">
+        <div className="max-w-6xl mx-auto px-4 py-3 md:py-6 flex items-center relative">
+          {/* Logo */}
+          <a href="#accueil" className="absolute left-4 top-1/2 -translate-y-1/2">
+            <img
+              src="/img/logo-fonce.png"
+              alt="SoLyo - Louise Durieu"
+              className="h-14 md:h-24 w-auto opacity-90 pointer-events-auto"
+            />
+          </a>
 
-    {/* Bouton burger : à droite, taille identique (mobile only) */}
-    <button
-      className="md:hidden text-sage ml-auto"
-      onClick={() => setMenuOpen(!menuOpen)}
-      aria-label="Menu"
-    >
-      <svg
-        className="w-7 h-7"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-          d={
-            menuOpen
-              ? "M6 18L18 6M6 6l12 12" // croix
-              : "M4 6h16M4 12h16M4 18h16" // burger
-          }
-        />
-      </svg>
-    </button>
+          {/* Bouton burger mobile */}
+          <button
+            className="md:hidden text-sage ml-auto"
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Menu"
+          >
+            <svg
+              className="w-7 h-7"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d={
+                  menuOpen
+                    ? "M6 18L18 6M6 6l12 12" // croix
+                    : "M4 6h16M4 12h16M4 18h16" // burger
+                }
+              />
+            </svg>
+          </button>
 
-    {/* Menu desktop : texte plus grand dès md */}
-    <nav className="hidden md:flex ml-auto items-center gap-8 text-sm md:text-base lg:text-lg">
-      <a href="#about" className="hover:text-sage">Qui suis-je ?</a>
-      <a href="#yoga" className="hover:text-sage">Yoga</a>
-      <a href="#sophrologie" className="hover:text-sage">Sophrologie</a>
-      <a href="#témoignages" className="hover:text-sage">Témoignages</a>
-      <a href="#tarifs" className="hover:text-sage">Tarifs</a>
-      <a href="#rdv" className="hover:text-sage">Rendez-vous</a>
-      <a href="#contact" className="hover:text-sage">Contact</a>
-    </nav>
-  </div>
+          {/* Menu desktop */}
+          <nav className="hidden md:flex ml-auto items-center gap-8 text-sm md:text-base lg:text-lg">
+            <a href="#about" className="hover:text-sage">
+              Qui suis-je ?
+            </a>
 
-  {/* Menu mobile déroulant */}
-  {menuOpen && (
-    <div className="md:hidden bg-cream border-t px-4 pb-4">
-      <nav className="flex flex-col space-y-2 text-sm text-sage">
-        <a href="#about" onClick={() => setMenuOpen(false)}>Qui suis-je</a>
-        <a href="#yoga" onClick={() => setMenuOpen(false)}>Yoga</a>
-        <a href="#sophrologie" onClick={() => setMenuOpen(false)}>Sophrologie</a>
-        <a href="#témoignages" onClick={() => setMenuOpen(false)}>Témoignages</a>
-        <a href="#tarifs" onClick={() => setMenuOpen(false)}>Tarifs</a>
-        <a href="#rdv" onClick={() => setMenuOpen(false)}>Rendez-vous</a>
-        <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
-      </nav>
-    </div>
-  )}
-</header>
+            <Link to="/yoga" className="hover:text-sage">
+              Yoga
+            </Link>
+            <Link to="/sophrologie" className="hover:text-sage">
+              Sophrologie
+            </Link>
 
-npm run dev
+            <a href="#temoignages" className="hover:text-sage">
+              Témoignages
+            </a>
+            <a href="#tarifs" className="hover:text-sage">
+              Tarifs
+            </a>
+            <a href="#rdv" className="hover:text-sage">
+              Rendez-vous
+            </a>
+            <a href="#contact" className="hover:text-sage">
+              Contact
+            </a>
+          </nav>
+        </div>
+
+        {/* Menu mobile déroulant */}
+        {menuOpen && (
+          <div className="md:hidden bg-cream border-t px-4 pb-4">
+            <nav className="flex flex-col space-y-2 text-sm text-sage">
+              <a href="#about" onClick={() => setMenuOpen(false)}>
+                Qui suis-je
+              </a>
+
+              <Link to="/yoga" onClick={() => setMenuOpen(false)}>
+                Yoga
+              </Link>
+              <Link to="/sophrologie" onClick={() => setMenuOpen(false)}>
+                Sophrologie
+              </Link>
+
+              <a href="#temoignages" onClick={() => setMenuOpen(false)}>
+                Témoignages
+              </a>
+              <a href="#tarifs" onClick={() => setMenuOpen(false)}>
+                Tarifs
+              </a>
+              <a href="#rdv" onClick={() => setMenuOpen(false)}>
+                Rendez-vous
+              </a>
+              <a href="#contact" onClick={() => setMenuOpen(false)}>
+                Contact
+              </a>
+            </nav>
+          </div>
+        )}
+      </header>
+
+  
+
 
       {/* Page d’accueil */}
      <section id="accueil"
@@ -312,8 +364,8 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
   </div>
 </section>
 
-{/* Section Témoignages */}
-<section id="témoignages" className="bg-white py-20 px-6">
+{/* Section Temoignages */}
+<section id="temoignages" className="bg-white py-20 px-6">
   <h2 className="text-3xl font-bold text-center text-terra mb-12">Témoignages</h2>
   <div className="max-w-3xl mx-auto px-0">
     <div dangerouslySetInnerHTML={{ __html: `<div class="elfsight-app-140b7d95-fb84-4e13-891c-bedfe62f33cd"></div>` }} />
@@ -467,17 +519,15 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
 
 </section>
 
-<footer className="bg-cream border-top border-olive/30 py-6 px-6">
-  <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-charbon">
-    <p>© {new Date().getFullYear()} SoLyo – Louise Durieu. Tous droits réservés.</p>
-    <div className="flex items-center gap-4">
-      <a href="/mentions-legales" className="hover:text-sage underline">Mentions légales</a>
-      <a href="#contact" className="hover:text-sage underline">Contact</a>
-    </div>
-  </div>
-</footer>
-
-
+      <footer className="bg-cream border-t border-olive/30 py-6 px-6">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-charbon">
+          <p>© {new Date().getFullYear()} SoLyo – Louise Durieu. Tous droits réservés.</p>
+          <div className="flex items-center gap-4">
+            <a href="/mentions-legales" className="hover:text-sage underline">Mentions légales</a>
+            <a href="#contact" className="hover:text-sage underline">Contact</a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
-  }
+}
