@@ -513,7 +513,7 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
   <div className="mt-10 text-center text-sm text-charbon space-y-1">
   <p>📧 <a href="mailto:louise@solyo.fr" className="hover:text-sage underline">louise@solyo.fr</a></p>
   <p>📞 <a href="tel:+33661366809" className="hover:text-sage underline">06 61 36 68 09</a></p>
-  <p>📍 <a href="https://www.google.com/maps/place/SoLyo+-+Sophrologie+et+Yoga+-+Louise+Durieu" target="_blank" rel="noopener noreferrer" className="hover:text-sage underline">26, rue de Châteaudun 92250 La Garenne-Colombes</a></p>
+  <p>📍 <a href="https://www.google.com/maps/place/26+Rue+de+Ch%C3%A2teaudun,+92250+La+Garenne-Colombes" target="_blank" rel="noopener noreferrer" className="hover:text-sage underline">26, rue de Châteaudun 92250 La Garenne-Colombes</a></p>
 </div>
 
 </section>
