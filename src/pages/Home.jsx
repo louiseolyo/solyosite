@@ -400,7 +400,6 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
       <div className="bg-cream rounded-lg p-6 shadow">
         <h4 className="font-semibold text-sage mb-2">Cours collectifs</h4>
         <ul className="text-sm text-charbon space-y-1">
-          <li>🧘‍♂️ Au cabinet : <span className="text-charbon">50€/h (15€/personne à partir de 4 personnes)</span></li>
           <li>🏠 À domicile : <span className="text-charbon">60€/h (15€/personne au delà de 4 personnes)</span></li>
         </ul>
       </div>
@@ -514,7 +513,7 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
   <div className="mt-10 text-center text-sm text-charbon space-y-1">
   <p>📧 <a href="mailto:louise@solyo.fr" className="hover:text-sage underline">louise@solyo.fr</a></p>
   <p>📞 <a href="tel:+33661366809" className="hover:text-sage underline">06 61 36 68 09</a></p>
-  <p>📍 <a href="https://www.google.com/maps?q=2,+rue+Denis+Papin+92600+Asnières-sur-Seine" target="_blank" rel="noopener noreferrer" className="hover:text-sage underline">2, rue Denis Papin 92600 Asnières-sur-Seine</a></p>
+  <p>📍 <a href="https://www.google.com/maps?q=26+Rue+de+Châteaudun,+92250+La+Garenne-Colombes" target="_blank" rel="noopener noreferrer" className="hover:text-sage underline">26, rue de Châteaudun 92250 La Garenne-Colombes</a></p>
 </div>
 
 </section>
