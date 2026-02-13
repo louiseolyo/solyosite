@@ -417,15 +417,34 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
         <ul className="text-sm text-charbon space-y-1">
           <li>🧘‍♂️ Au cabinet : <span className="text-charbon">60 € (1ère séance : 65€)</span></li>
           <li>🏠 À domicile (proche cabinet) : <span className="text-charbon">75 € (1ère séance : 85 €)</span></li>
-          <li>Tarifs réduits étudiants et demandeurs d'emploi sur demande <span className="text-terra"></span></li>
         </ul>
+           <p className="text-sm text-sage mt-3 italic">
+    Étudiants / Demandeur d'emploi : -15€ par séance
+        </p>
       </div>
+      
       <div className="bg-cream rounded-lg p-6 shadow">
+  <h4 className="font-semibold text-sage mb-2">
+    Accompagnements en programme
+  </h4>
+
+  <ul className="text-sm text-charbon space-y-1">
+    <li>• 6 séances : <span className="text-charbon">330 €</span> <span className="text-terra">(au lieu de 365 €)</span></li>
+    <li>• 8 séances : <span className="text-charbon">420 €</span> <span className="text-terra">(au lieu de 485 €)</span></li>
+    <li>• 10 séances : <span className="text-charbon">520 €</span> <span className="text-terra">(au lieu de 605 €)</span></li>
+  </ul>
+
+  <p className="text-sm text-sage mt-3 italic">
+    Possibilité de paiement en 2 fois
+  </p>
+</div>
+<div className="bg-cream rounded-lg p-6 shadow">
         <h4 className="font-semibold text-sage mb-2">Séances collectives</h4>
         <ul className="text-sm text-charbon space-y-1">
           <li>🧘‍♂️ En groupe (cabinet) : <span className="text-charbon">20€/personne (3 personnes minimum)</span></li>
         </ul>
       </div>
+
     </div>
   </div>
 
@@ -513,7 +532,7 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
   <div className="mt-10 text-center text-sm text-charbon space-y-1">
   <p>📧 <a href="mailto:louise@solyo.fr" className="hover:text-sage underline">louise@solyo.fr</a></p>
   <p>📞 <a href="tel:+33661366809" className="hover:text-sage underline">06 61 36 68 09</a></p>
-  <p>📍 <a href="https://www.google.com/maps/place/26+Rue+de+Ch%C3%A2teaudun,+92250+La+Garenne-Colombes" target="_blank" rel="noopener noreferrer" className="hover:text-sage underline">26, rue de Châteaudun 92250 La Garenne-Colombes</a></p>
+  <p>📍 <a href="https://www.google.com/maps/place/26+Rue+de+Chateaudun,+92250+La+Garenne-Colombes" target="_blank" rel="noopener noreferrer" className="hover:text-sage underline">26, rue de Châteaudun 92250 La Garenne-Colombes</a></p>
 </div>
 
 </section>
