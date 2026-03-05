@@ -189,7 +189,12 @@ async function handleSubmit(e) {
 
   <a href="#yoga-senior" className="text-white hover:text-olive/90 transition">Senior</a>
 </h2>
-
+<p className="text-sm md:text-base leading-relaxed text-white/90 max-w-lg mx-auto mb-8">
+  Je vous accompagne en <strong>sophrologie</strong> et en <strong>yoga</strong> à 
+  <strong> La Garenne-Colombes</strong>, dans un espace dédié au bien-être et à l’écoute, 
+  ainsi qu’à domicile dans les villes alentours (Courbevoie, Colombes, Bois-Colombes, 
+  Asnières-sur-Seine…) et en visio.
+</p>
     <a
   href="https://calendly.com/louise-solyo/seance-sophrologie?preview_source=et_card&month=2025-08"
   target="_blank"
