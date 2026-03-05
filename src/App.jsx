@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import Yoga from "./pages/Yoga";

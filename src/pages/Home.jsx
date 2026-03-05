@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 
 export default function Home() {
@@ -55,6 +56,15 @@ async function handleSubmit(e) {
 }
 
   return (
+        <>
+    <Helmet>
+      <title>Sophrologue et professeure de yoga à La Garenne-Colombes | SoLyo</title>
+      <meta
+        name="description"
+        content="Séances de sophrologie et cours de yoga à La Garenne-Colombes. Accompagnement pour le stress, la grossesse et le bien-être."
+      />
+    </Helmet>
+
     <div className="min-h-screen bg-cream text-charbon font-sans scroll-smooth">
       {/* Barre de navigation */}
       <header className="fixed w-full bg-cream shadow z-50">
@@ -552,5 +562,6 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
         </div>
       </footer>
     </div>
+    </>
   );
 }
