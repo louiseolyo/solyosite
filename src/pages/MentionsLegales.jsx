@@ -8,10 +8,10 @@ export default function MentionsLegales() {
     <h3>Éditeur du site</h3>
     <p>
       <strong>Louise Durieu – SoLyo</strong><br/>
-      Adresse : 14, avenue du Général de Gaulle 92250 La Garenne-Colombes<br/>
+      Adresse : 26, rue de Châteaudun 92250 La Garenne-Colombes<br/>
       Téléphone : 0661366809<br/>
       Email : louise@solyo.fr<br/>
-      SIRET : 938 377 363 00024<br/>
+      SIRET : 938 377 363 00032<br/>
       Code APE : 8551Z
     </p>
 
