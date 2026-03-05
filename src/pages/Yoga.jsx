@@ -85,6 +85,9 @@ export default function Yoga() {
             <p className="text-md mb-4">
               Je suis également formatrice en Yoga Prénatal et Postnatal et en Yoga Vinyasa depuis 2022.
             </p>
+            <p className="text-md font-bold text-sage mb-4">
+              Je propose des cours particuliers à mon cabinet à La Garenne-Colombes, et je me déplace à votre domicile aux alentours (Asnières-sur-Seine, Colombes, Bois-Colombes, Courbevoie...).
+            </p>
           </div>
 
           <div className="grid gap-8 md:grid-cols-3">

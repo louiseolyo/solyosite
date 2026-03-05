@@ -92,12 +92,12 @@ export default function Sophrologie() {
               La sophrologie est une méthode psycho-corporelle douce qui aide à mieux gérer ses émotions, 
               son stress, et à se reconnecter à soi.
             </p>
-            <p className="text-md font-bold text-sage">
+            <p className="text-md font-bold text-sage mb-4">
               Spécialisée en grossesse et maternité et en cancérologie, je vous accompagne 
               quelle que soit votre problématique : stress, sommeil, confiance, examens, 
               addictions, nutrition...
             </p>
-            <p className="text-md font-bold text-sage">
+            <p className="text-md mb-4">
               Je vous reçois pour des séances de sophrologie à La Garenne-Colombes, et j’interviens également à domicile à Courbevoie, Colombes, Bois-Colombes et Asnières-sur-Seine, ainsi qu'en visio.
             </p>
           </div>
