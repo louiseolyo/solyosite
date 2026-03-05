@@ -6,23 +6,7 @@ for = "/*"
   X-Content-Type-Options = "nosniff"
   Referrer-Policy = "strict-origin-when-cross-origin"
 
-[[redirects]]
-  from = "https://solyo.fr"
-  to = "https://www.solyo.fr"
-  status = 301
-  force = true
 
-[[redirects]]
-  from = "https://solyo.fr/"
-  to = "https://www.solyo.fr/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://solyo.fr/*"
-  to = "https://www.solyo.fr/:splat"
-  status = 301
-  force = true
 
 [[redirects]]
   from = "/*"
