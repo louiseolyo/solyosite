@@ -97,6 +97,9 @@ export default function Sophrologie() {
               quelle que soit votre problématique : stress, sommeil, confiance, examens, 
               addictions, nutrition...
             </p>
+            <p className="text-md font-bold text-sage">
+              Je vous reçois pour des séances de sophrologie à La Garenne-Colombes, et j’interviens également à domicile à Courbevoie, Colombes, Bois-Colombes et Asnières-sur-Seine, ainsi qu'en visio.
+            </p>
           </div>
 
           {/* Cartes thématiques */}
