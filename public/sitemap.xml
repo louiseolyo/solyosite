@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
-    <loc>https://solyo.fr/</loc>
+    <loc>https://www.solyo.fr/</loc>
+    <lastmod>2026-03-08</lastmod>
+    <priority>1.0</priority>
+    <changefreq>monthly</changefreq>
   </url>
-
   <url>
-    <loc>https://solyo.fr/sophrologie</loc>
+    <loc>https://www.solyo.fr/sophrologie</loc>
+    <lastmod>2026-03-08</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
-
   <url>
-    <loc>https://solyo.fr/yoga</loc>
+    <loc>https://www.solyo.fr/yoga</loc>
+    <lastmod>2026-03-08</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
-
 </urlset>

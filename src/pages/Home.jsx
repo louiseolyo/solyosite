@@ -61,9 +61,34 @@ async function handleSubmit(e) {
       <title>Sophrologue et professeure de yoga à La Garenne-Colombes | SoLyo</title>
       <meta
         name="description"
-        content="Séances de sophrologie et cours de yoga à La Garenne-Colombes. Accompagnement pour le stress, la grossesse et le bien-être."
-      />
-    </Helmet>
+        content="Louise Durieu, sophrologue et professeure de yoga à La Garenne-Colombes. 
+Yoga Vinyasa, Prénatal, Senior. Sophrologie stress, grossesse, cancérologie. 
+Cabinet, domicile ou visio."/>
+      <script type="application/ld+json">{`
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "SoLyo – Louise Durieu",
+      "description": "Sophrologie et yoga à La Garenne-Colombes",
+      "url": "https://www.solyo.fr",
+      "telephone": "+33661366809",
+      "email": "louise@solyo.fr",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "26 rue de Châteaudun",
+        "addressLocality": "La Garenne-Colombes",
+        "postalCode": "92250",
+        "addressCountry": "FR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 48.9047,
+        "longitude": 2.2414
+      },
+      "serviceArea": ["La Garenne-Colombes", "Courbevoie", "Colombes", "Bois-Colombes", "Asnières-sur-Seine"]
+    }
+  `}</script>
+</Helmet>
 
     <div className="min-h-screen bg-cream text-charbon font-sans scroll-smooth">
       {/* Barre de navigation */}
@@ -273,7 +298,7 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
       <div className="bg-cream rounded-xl shadow-md overflow-hidden flex flex-col">
         <img src="/img/yoga-vinyasa.jpg" alt="Yoga Vinyasa" className="w-full h-48 object-cover" />
         <div className="p-6 flex flex-col flex-grow">
-          <h3 className="text-xl font-semibold text-charbon mb-2">Yoga Vinyasa</h3>
+          <h2 className="text-xl font-semibold text-charbon mb-2">Yoga Vinyasa</h2>
           <p className="text-sage text-sm mb-4">
             Un yoga dynamique, basé sur la respiration et l'enchaînement des postures (asanas).
             Il favorise la souplesse, le renforcement musculaire, la concentration et l’ancrage.
@@ -290,7 +315,7 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
       <div className="bg-cream rounded-xl shadow-md overflow-hidden flex flex-col">
         <img src="/img/yoga-prenatal.jpg" alt="Yoga Prénatal" className="w-full h-48 object-cover" />
         <div className="p-6 flex flex-col flex-grow">
-          <h3 className="text-xl font-semibold text-charbon mb-2">Yoga Prénatal</h3>
+          <h2 className="text-xl font-semibold text-charbon mb-2">Yoga Prénatal</h2>
           <p className="text-sage text-sm mb-4">
             Une pratique douce ou dynamique selon votre corps et vos envies, avec des postures adaptées,
             pour vivre la grossesse en conscience, soulager les tensions et se préparer à l’accouchement.
@@ -307,7 +332,7 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
       <div className="bg-cream rounded-xl shadow-md overflow-hidden flex flex-col">
         <img src="/img/yoga-senior.jpg" alt="Yoga Senior" className="w-full h-48 object-cover" />
         <div className="p-6 flex flex-col flex-grow">
-          <h3 className="text-xl font-semibold text-charbon mb-2">Yoga Senior</h3>
+          <h2 className="text-xl font-semibold text-charbon mb-2">Yoga Senior</h2>
           <p className="text-sage text-sm mb-4">
             Une pratique adaptée pour entretenir la mobilité, soulager les douleurs, gagner en souplesse,
             renforcer la masse musculaire, améliorer l’équilibre et cultiver le bien-être global.
@@ -319,6 +344,11 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
       </div>
     </div>
   </div>
+  <div className="text-center mt-8">
+  <Link to="/yoga" className="text-sage underline hover:text-olive text-sm">
+    En savoir plus sur le Yoga →
+  </Link>
+</div>
 </section>
 
 
@@ -355,7 +385,7 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
   <div className="grid gap-6 md:grid-cols-3 max-w-5xl mx-auto">
     {/* Carte 1 */}
     <div className="bg-white rounded-xl shadow-md p-6 flex flex-col">
-      <h3 className="text-xl font-semibold mb-2">Stress & émotions</h3>
+      <h2 className="text-xl font-semibold mb-2">Stress & émotions</h2>
       <p className="text-sage text-sm">
         Apprendre à apaiser les tensions, retrouver le calme intérieur et prendre du recul dans le quotidien.
       </p>
@@ -363,7 +393,7 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
 
     {/* Carte 2 */}
     <div className="bg-white rounded-xl shadow-md p-6 flex flex-col">
-      <h3 className="text-xl font-semibold mb-2">Grossesse & maternité</h3>
+      <h2 className="text-xl font-semibold mb-2">Grossesse & maternité</h2>
       <p className="text-sage text-sm">
         Préparer sereinement l’arrivée de bébé, se relier à son corps, à ses ressources et accueillir chaque étape avec confiance.
       </p>
@@ -371,13 +401,20 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
 
     {/* Carte 3 */}
     <div className="bg-white rounded-xl shadow-md p-6 flex flex-col">
-      <h3 className="text-xl font-semibold mb-2">Cancer et pathologies</h3>
+      <h2 className="text-xl font-semibold mb-2">Cancer et pathologies</h2>
       <p className="text-sage text-sm">
         Mieux vivre sa maladie, son traitement, accepter et s'adapter à cette nouvelle vie. Je vous accompagne dès l'annonce de votre maladie ou de votre rechute. 
       </p>
     </div>
   </div>
+  <div className="text-center mt-8">
+  <Link to="/sophrologie" className="text-sage underline hover:text-olive text-sm">
+    En savoir plus sur la Sophrologie →
+  </Link>
+</div>
 </section>
+
+
 
 {/* Section Temoignages */}
 <section id="temoignages" className="bg-white py-20 px-6">

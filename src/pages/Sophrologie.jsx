@@ -1,12 +1,19 @@
 // src/pages/Sophrologie.jsx
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 export default function Sophrologie() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-cream text-charbon font-sans scroll-smooth">
+
+
+<Helmet>
+  <title>Sophrologue à La Garenne-Colombes – Louise Durieu | SoLyo</title>
+  <meta name="description" content="Louise Durieu, sophrologue certifiée à La Garenne-Colombes. Séances de sophrologie pour stress, grossesse, cancérologie. Consultations à domicile à Courbevoie, Colombes, Asnières et en visio." />
+</Helmet>
       {/* Barre de navigation */}
       <header className="fixed w-full bg-cream shadow z-50">
         <div className="max-w-6xl mx-auto px-4 py-3 md:py-6 flex items-center relative">
@@ -76,7 +83,7 @@ export default function Sophrologie() {
       {/* Contenu page Sophrologie */}
       <main className="pt-32 bg-sage/10 min-h-screen">
         <section className="pb-16 px-6">
-          <h1 className="text-3xl font-bold text-center text-terra mb-8">Sophrologie</h1>
+          <h1 className="text-3xl font-bold text-center text-terra mb-8">Sophrologie à La Garenne-Colombes</h1>
 
           {/* Image d’ambiance */}
           <div className="max-w-4xl mx-auto mb-10">
@@ -105,14 +112,14 @@ export default function Sophrologie() {
           {/* Cartes thématiques */}
           <div className="grid gap-6 md:grid-cols-3 max-w-5xl mx-auto">
             <div className="bg-white rounded-xl shadow-md p-6 flex flex-col">
-              <h3 className="text-xl font-semibold mb-2">Stress & émotions</h3>
+              <h2 className="text-xl font-semibold mb-2">Stress & émotions</h2>
               <p className="text-sage text-sm">
                 Apprendre à apaiser les tensions, retrouver le calme intérieur et prendre du recul dans le quotidien.
               </p>
             </div>
 
             <div className="bg-white rounded-xl shadow-md p-6 flex flex-col">
-              <h3 className="text-xl font-semibold mb-2">Grossesse & maternité</h3>
+              <h2 className="text-xl font-semibold mb-2">Grossesse & maternité</h2>
               <p className="text-sage text-sm">
                 Préparer sereinement l’arrivée de bébé, se relier à son corps, à ses ressources 
                 et accueillir chaque étape avec confiance.
@@ -120,7 +127,7 @@ export default function Sophrologie() {
             </div>
 
             <div className="bg-white rounded-xl shadow-md p-6 flex flex-col">
-              <h3 className="text-xl font-semibold mb-2">Cancer et pathologies</h3>
+              <h2 className="text-xl font-semibold mb-2">Cancer et pathologies</h2>
               <p className="text-sage text-sm">
                 Mieux vivre sa maladie, son traitement, accepter et s'adapter à cette nouvelle vie. 
                 Je vous accompagne dès l'annonce de votre maladie ou de votre rechute.

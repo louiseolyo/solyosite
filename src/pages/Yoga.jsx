@@ -1,12 +1,18 @@
 // src/pages/Yoga.jsx
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 export default function Yoga() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-white text-charbon font-sans scroll-smooth">
+
+<Helmet>
+  <title>Cours de Yoga à La Garenne-Colombes – Louise Durieu | SoLyo</title>
+  <meta name="description" content="Louise Durieu, professeure de Yoga Vinyasa, Prénatal/Postnatal et Senior à La Garenne-Colombes. Cours particuliers au cabinet ou à domicile à Asnières, Colombes, Courbevoie." />
+</Helmet>
       {/* Barre de navigation */}
       <header className="fixed w-full bg-cream shadow z-50">
         <div className="max-w-6xl mx-auto px-4 py-3 md:py-6 flex items-center relative">
@@ -76,7 +82,7 @@ export default function Yoga() {
       {/* Contenu page Yoga */}
       <main className="pt-32">
         <section className="bg-white pb-16 px-6">
-          <h1 className="text-3xl font-bold text-center text-sage mb-8">Yoga</h1>
+          <h1 className="text-3xl font-bold text-center text-sage mb-8">Cours de Yoga à La Garenne-Colombes</h1>
           
           <div className="max-w-4xl mx-auto text-center text-charbon mb-12">
             <p className="text-md mb-4">
@@ -95,7 +101,7 @@ export default function Yoga() {
             <div className="bg-cream rounded-xl shadow-md overflow-hidden flex flex-col">
               <img src="/img/yoga-vinyasa.jpg" alt="Yoga Vinyasa" className="w-full h-48 object-cover" />
               <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-xl font-semibold text-charbon mb-2">Yoga Vinyasa</h3>
+                <h2 className="text-xl font-semibold text-charbon mb-2">Yoga Vinyasa</h2>
                 <p className="text-sage text-sm mb-4">
                   Le Yoga Vinyasa est un yoga dynamique, basé sur la respiration et l'enchaînement des postures (asanas). 
                   Il favorise la souplesse, le renforcement musculaire, la concentration et l’ancrage.
@@ -110,7 +116,7 @@ export default function Yoga() {
             <div className="bg-cream rounded-xl shadow-md overflow-hidden flex flex-col">
               <img src="/img/yoga-prenatal.jpg" alt="Yoga Prénatal" className="w-full h-48 object-cover" />
               <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-xl font-semibold text-charbon mb-2">Yoga Prénatal/Postanatal</h3>
+                <h2 className="text-xl font-semibold text-charbon mb-2">Yoga Prénatal/Postanatal</h2>
                 <p className="text-sage text-sm mb-4">
                   Le Yoga Prénatal ou Postnatal est une pratique douce ou dynamique selon votre corps et vos envies, avec des postures adaptées, 
                   pour vivre la grossesse en conscience, soulager les tensions, préparer l’accouchement ou mieux vivre son postpartum.
@@ -125,7 +131,7 @@ export default function Yoga() {
             <div className="bg-cream rounded-xl shadow-md overflow-hidden flex flex-col">
               <img src="/img/yoga-senior.jpg" alt="Yoga Senior" className="w-full h-48 object-cover" />
               <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-xl font-semibold text-charbon mb-2">Yoga Senior</h3>
+                <h2 className="text-xl font-semibold text-charbon mb-2">Yoga Senior</h2>
                 <p className="text-sage text-sm mb-4">
                   Le Yoga Senior est une pratique adaptée pour entretenir la mobilité, soulager les douleurs, gagner en souplesse, 
                   renforcer la masse musculaire, améliorer l’équilibre et cultiver le bien-être global.
