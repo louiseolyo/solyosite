@@ -1,5 +1,5 @@
 // src/pages/Home.jsx
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
@@ -8,6 +8,25 @@ import { Helmet } from "react-helmet-async";
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
+
+  const temoignagesRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          const script = document.createElement("script");
+          script.src = "https://static.elfsight.com/platform/platform.js";
+          script.async = true;
+          document.body.appendChild(script);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
+    if (temoignagesRef.current) observer.observe(temoignagesRef.current);
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
     if (location.hash) {
@@ -417,11 +436,10 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
 
 
 {/* Section Temoignages */}
-<section id="temoignages" className="bg-white py-20 px-6">
+<section id="temoignages" ref={temoignagesRef} className="bg-white py-20 px-6">
   <h2 className="text-3xl font-bold text-center text-terra mb-12">Témoignages</h2>
   <div className="max-w-3xl mx-auto px-0">
     <div dangerouslySetInnerHTML={{ __html: `<div class="elfsight-app-140b7d95-fb84-4e13-891c-bedfe62f33cd"></div>` }} />
-
   </div>
 </section>
 
