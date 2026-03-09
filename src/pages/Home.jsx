@@ -97,7 +97,7 @@ Cabinet, domicile ou visio."/>
           {/* Logo */}
           <a href="#accueil" className="absolute left-4 top-1/2 -translate-y-1/2">
             <img
-              src="/img/logo-fonce.png"
+              src="/img/logo-fonce.webp"
               alt="SoLyo - Louise Durieu"
               className="h-14 md:h-24 w-auto opacity-90 pointer-events-auto"
             />
@@ -195,12 +195,12 @@ Cabinet, domicile ou visio."/>
       {/* Page d’accueil */}
      <section id="accueil"
   className="bg-cover bg-no-repeat bg-right text-white px-4 py-32 md:py-48 lg:py-56"
-  style={{ backgroundImage: "url('/img/monstera-background.jpg')" }}
+  style={{ backgroundImage: "url('/img/monstera-background.webp')" }}
 >
   <div className="bg-black/40 backdrop-blur-sm rounded-xl max-w-xl mx-auto text-center px-4 py-10">
     <h1 className="text-center mb-4 leading-tight">
   <img 
-    src="/img/logo-blanc.png" 
+    src="/img/logo-blanc.webp" 
     alt="SoLyo Logo" 
     className="mx-auto h-28 md:h-40 w-auto mb-0"
   />
@@ -252,7 +252,7 @@ Cabinet, domicile ou visio."/>
       {/* Photo */}
       <div className="md:col-span-1 flex items-center">
         <img 
-          src="/img/moi.jpg" 
+          src="/img/moi.webp" 
           alt="Louise Durieu" 
           className="w-full h-auto rounded-xl object-cover shadow-lg"
         />
@@ -296,7 +296,7 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
     {/* Carte Vinyasa */}
     <div id="yoga-vinyasa" className="-mt-28 pt-28 md:-mt-36 md:pt-36">
       <div className="bg-cream rounded-xl shadow-md overflow-hidden flex flex-col">
-        <img src="/img/yoga-vinyasa.jpg" alt="Yoga Vinyasa" className="w-full h-48 object-cover" />
+        <img src="/img/yoga-vinyasa.webp" alt="Yoga Vinyasa" className="w-full h-48 object-cover" />
         <div className="p-6 flex flex-col flex-grow">
           <h2 className="text-xl font-semibold text-charbon mb-2">Yoga Vinyasa</h2>
           <p className="text-sage text-sm mb-4">
@@ -313,7 +313,7 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
     {/* Carte Prénatal */}
     <div id="yoga-prenatal" className="-mt-28 pt-28 md:-mt-36 md:pt-36">
       <div className="bg-cream rounded-xl shadow-md overflow-hidden flex flex-col">
-        <img src="/img/yoga-prenatal.jpg" alt="Yoga Prénatal" className="w-full h-48 object-cover" />
+        <img src="/img/yoga-prenatal.webp" alt="Yoga Prénatal" className="w-full h-48 object-cover" />
         <div className="p-6 flex flex-col flex-grow">
           <h2 className="text-xl font-semibold text-charbon mb-2">Yoga Prénatal</h2>
           <p className="text-sage text-sm mb-4">
@@ -330,7 +330,7 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
     {/* Carte Senior */}
     <div id="yoga-senior" className="-mt-28 pt-28 md:-mt-36 md:pt-36">
       <div className="bg-cream rounded-xl shadow-md overflow-hidden flex flex-col">
-        <img src="/img/yoga-senior.jpg" alt="Yoga Senior" className="w-full h-48 object-cover" />
+        <img src="/img/yoga-senior.webp" alt="Yoga Senior" className="w-full h-48 object-cover" />
         <div className="p-6 flex flex-col flex-grow">
           <h2 className="text-xl font-semibold text-charbon mb-2">Yoga Senior</h2>
           <p className="text-sage text-sm mb-4">
@@ -359,7 +359,7 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
   {/* Image d’ambiance */}
   <div className="max-w-4xl mx-auto mb-10">
     <img
-      src="/img/sophrologie-illustration.jpg"
+      src="/img/sophrologie-illustration.webp"
       alt="Séance de sophrologie"
       className="rounded-xl w-full h-64 object-cover shadow-md"
     />

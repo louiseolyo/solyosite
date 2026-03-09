@@ -88,7 +88,7 @@ export default function Sophrologie() {
           {/* Image d’ambiance */}
           <div className="max-w-4xl mx-auto mb-10">
             <img
-              src="/img/sophrologie-illustration.jpg"
+              src="/img/sophrologie-illustration.webp"
               alt="Séance de sophrologie"
               className="rounded-xl w-full h-64 object-cover shadow-md"
             />

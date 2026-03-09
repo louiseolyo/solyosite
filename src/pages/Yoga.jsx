@@ -99,7 +99,7 @@ export default function Yoga() {
           <div className="grid gap-8 md:grid-cols-3">
             {/* Vinyasa */}
             <div className="bg-cream rounded-xl shadow-md overflow-hidden flex flex-col">
-              <img src="/img/yoga-vinyasa.jpg" alt="Yoga Vinyasa" className="w-full h-48 object-cover" />
+              <img src="/img/yoga-vinyasa.webp" alt="Yoga Vinyasa" className="w-full h-48 object-cover" />
               <div className="p-6 flex flex-col flex-grow">
                 <h2 className="text-xl font-semibold text-charbon mb-2">Yoga Vinyasa</h2>
                 <p className="text-sage text-sm mb-4">
@@ -114,7 +114,7 @@ export default function Yoga() {
 
             {/* Prénatal */}
             <div className="bg-cream rounded-xl shadow-md overflow-hidden flex flex-col">
-              <img src="/img/yoga-prenatal.jpg" alt="Yoga Prénatal" className="w-full h-48 object-cover" />
+              <img src="/img/yoga-prenatal.webp" alt="Yoga Prénatal" className="w-full h-48 object-cover" />
               <div className="p-6 flex flex-col flex-grow">
                 <h2 className="text-xl font-semibold text-charbon mb-2">Yoga Prénatal/Postanatal</h2>
                 <p className="text-sage text-sm mb-4">
@@ -129,7 +129,7 @@ export default function Yoga() {
 
             {/* Senior */}
             <div className="bg-cream rounded-xl shadow-md overflow-hidden flex flex-col">
-              <img src="/img/yoga-senior.jpg" alt="Yoga Senior" className="w-full h-48 object-cover" />
+              <img src="/img/yoga-senior.webp" alt="Yoga Senior" className="w-full h-48 object-cover" />
               <div className="p-6 flex flex-col flex-grow">
                 <h2 className="text-xl font-semibold text-charbon mb-2">Yoga Senior</h2>
                 <p className="text-sage text-sm mb-4">
