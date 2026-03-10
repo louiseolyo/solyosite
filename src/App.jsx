@@ -1,9 +1,10 @@
-import { Helmet } from "react-helmet-async";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import Yoga from "./pages/Yoga";
 import Sophrologie from "./pages/Sophrologie";
 import MentionsLegales from "./pages/MentionsLegales.jsx";
+import Blog from "./pages/Blog.jsx";
+import BlogArticle from "./pages/BlogArticle.jsx";
 
 export default function App() {
   return (
@@ -11,9 +12,11 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/mentions-legales" element={<MentionsLegales />} />
-        <Route path="*" element={<Home />} />
         <Route path="/yoga" element={<Yoga />} />
         <Route path="/sophrologie" element={<Sophrologie />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:slug" element={<BlogArticle />} />
+        <Route path="*" element={<Home />} />
       </Routes>
     </Router>
   );
