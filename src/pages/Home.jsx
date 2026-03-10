@@ -173,6 +173,7 @@ Cabinet, domicile ou visio."/>
             <a href="#contact" className="hover:text-sage">
               Contact
             </a>
+            <Link to="/blog" className="hover:text-sage">Blog</Link>
           </nav>
         </div>
 
@@ -203,6 +204,7 @@ Cabinet, domicile ou visio."/>
               <a href="#contact" onClick={() => setMenuOpen(false)}>
                 Contact
               </a>
+              <Link to="/blog" onClick={() => setMenuOpen(false)}>Blog</Link>
             </nav>
           </div>
         )}

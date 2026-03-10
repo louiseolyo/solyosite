@@ -20,7 +20,7 @@ export default function Sophrologie() {
           {/* Logo */}
           <Link to="/" className="absolute left-4 top-1/2 -translate-y-1/2">
             <img
-              src="/img/logo-fonce.png"
+              src="/img/logo-fonce.webp"
               alt="SoLyo - Louise Durieu"
               className="h-14 md:h-24 w-auto opacity-90 pointer-events-auto"
             />
@@ -61,6 +61,7 @@ export default function Sophrologie() {
             <a href="/#tarifs" className="hover:text-sage">Tarifs</a>
             <a href="/#rdv" className="hover:text-sage">Rendez-vous</a>
             <a href="/#contact" className="hover:text-sage">Contact</a>
+          <Link to="/blog" className="hover:text-sage">Blog</Link>
           </nav>
         </div>
 
@@ -75,6 +76,7 @@ export default function Sophrologie() {
               <a href="/#tarifs" onClick={() => setMenuOpen(false)}>Tarifs</a>
               <a href="/#rdv" onClick={() => setMenuOpen(false)}>Rendez-vous</a>
               <a href="/#contact" onClick={() => setMenuOpen(false)}>Contact</a>
+            <Link to="/blog" onClick={() => setMenuOpen(false)}>Blog</Link>
             </nav>
           </div>
         )}
