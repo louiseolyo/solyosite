@@ -639,7 +639,7 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
       <a href="https://www.syndicat-sophrologues-independant.fr/" target="_blank" rel="noopener noreferrer">
         <img src="/img/logo-syndicat.jpg" alt="Nom du syndicat" className="h-10 w-auto opacity-80 hover:opacity-100 transition" />
       </a>
-      <a href="https://sophrologie.expert/sophrologie/hauts-de-seine/la-garenne-colombes-92250/maternite-et-parentalite/solyo-louise-durieu" target="_blank" rel="noopener noreferrer">
+      <a href="https://sophrologie.expert/" target="_blank" rel="noopener noreferrer">
         <img src="/img/logo-annuaire.png" alt="Annuaire du syndicat" className="h-10 w-auto opacity-80 hover:opacity-100 transition" />
       </a>
     </div>
