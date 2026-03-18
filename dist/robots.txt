@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://solyo.fr/sitemap.xml
+Sitemap: https://www.solyo.fr/sitemap.xml

@@ -252,7 +252,7 @@ Cabinet, domicile ou visio."/>
   Asnières-sur-Seine…) et en visio.
 </p>
     <a
-  href="https://calendly.com/louise-solyo/seance-sophrologie?preview_source=et_card&month=2025-08"
+  href="https://www.resalib.fr/praticien/126130-louise-durieu-sophrologue-la-garenne-colombes"
   target="_blank"
   rel="noopener noreferrer"
   className="inline-block bg-sage hover:bg-olive text-white px-6 py-3 rounded-full text-sm transition"
@@ -538,12 +538,12 @@ En 2024, je quitte mon métier de responsable administrative et financière pour
       Choisissez simplement votre créneau selon vos disponibilités pour les rendez-vous au cabinet :
     </p>
     <a
-      href="https://calendly.com/louise-solyo/seance-sophrologie?preview_source=et_card&month=2025-08"
+      href="https://www.resalib.fr/praticien/126130-louise-durieu-sophrologue-la-garenne-colombes"
       target="_blank"
       rel="noopener noreferrer"
       className="bg-sage text-white px-6 py-3 rounded-full hover:bg-terra transition text-sm"
     >
-      Réserver un créneau via Calendly
+      Réserver un créneau via Résalib
     </a>
     <p className="mt-10 text-charbon text-sm">
       Pour les rendez-vous en visio ou à domicile, merci de me contacter par téléphone ou par mail afin de définir le créneau qui vous convient.
