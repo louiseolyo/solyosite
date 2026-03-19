@@ -8,10 +8,11 @@ export default function Blog() {
 
   return (
     <div className="min-h-screen bg-cream text-charbon font-sans">
-      <Helmet>
-        <title>Blog Sophrologie & Yoga – SoLyo | Louise Durieu</title>
-        <meta name="description" content="Articles et conseils sur la sophrologie et le yoga par Louise Durieu, sophrologue et professeure de yoga à La Garenne-Colombes." />
-      </Helmet>
+<Helmet>
+  <title>Blog Sophrologie & Yoga – SoLyo | Louise Durieu</title>
+  <meta name="description" content="Conseils et articles sur la sophrologie et le yoga par Louise Durieu, sophrologue et professeure de yoga à La Garenne-Colombes." />
+  <link rel="canonical" href="https://www.solyo.fr/blog" />
+</Helmet>
 
       {/* Header identique aux autres pages */}
       <header className="fixed w-full bg-cream shadow z-50">

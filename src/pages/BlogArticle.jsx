@@ -12,10 +12,11 @@ export default function BlogArticle() {
 
   return (
     <div className="min-h-screen bg-cream text-charbon font-sans">
-      <Helmet>
-        <title>{article.titre} – SoLyo | Louise Durieu</title>
-        <meta name="description" content={article.resume} />
-      </Helmet>
+<Helmet>
+  <title>{article.titre} – SoLyo | Louise Durieu</title>
+  <meta name="description" content={article.resume} />
+  <link rel="canonical" href={`https://www.solyo.fr/blog/${slug}`} />
+</Helmet>
 
       <header className="fixed w-full bg-cream shadow z-50">
   <div className="max-w-6xl mx-auto px-4 py-3 md:py-6 flex items-center relative">

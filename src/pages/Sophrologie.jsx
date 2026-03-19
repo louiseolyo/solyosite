@@ -9,10 +9,11 @@ export default function Sophrologie() {
   return (
     <div className="min-h-screen bg-cream text-charbon font-sans scroll-smooth">
 
-      <Helmet>
-        <title>Sophrologue à La Garenne-Colombes – Louise Durieu | SoLyo</title>
-        <meta name="description" content="Louise Durieu, sophrologue certifiée à La Garenne-Colombes. Séances de sophrologie pour stress, grossesse, cancérologie. Consultations à domicile à Courbevoie, Colombes, Asnières et en visio." />
-      </Helmet>
+<Helmet>
+  <title>Sophrologue à La Garenne-Colombes – Louise Durieu | SoLyo</title>
+  <meta name="description" content="Louise Durieu, sophrologue certifiée à La Garenne-Colombes. Séances de sophrologie pour stress, grossesse, cancérologie. Consultations à domicile à Courbevoie, Colombes, Asnières et en visio." />
+  <link rel="canonical" href="https://www.solyo.fr/sophrologie" />
+</Helmet>
 
       {/* Barre de navigation */}
       <header className="fixed w-full bg-cream shadow z-50">

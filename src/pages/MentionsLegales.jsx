@@ -1,7 +1,12 @@
-// src/pages/MentionsLegales.jsx
+import { Helmet } from "react-helmet-async";
 export default function MentionsLegales() {
   return (
     <div className="bg-white min-h-screen py-16 px-6">
+       <Helmet>
+    <title>Mentions légales – SoLyo | Louise Durieu</title>
+    <meta name="description" content="Mentions légales du site SoLyo – Louise Durieu, sophrologue et professeure de yoga à La Garenne-Colombes." />
+    <link rel="canonical" href="https://www.solyo.fr/mentions-legales" />
+  </Helmet>
       <div className="max-w-4xl mx-auto prose prose-sm md:prose-base text-charbon">
         <h1 className="text-3xl font-bold text-sage mb-10">Mentions légales</h1>
 

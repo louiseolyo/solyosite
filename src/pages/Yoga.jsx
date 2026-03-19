@@ -12,6 +12,7 @@ export default function Yoga() {
 <Helmet>
   <title>Cours de Yoga à La Garenne-Colombes – Louise Durieu | SoLyo</title>
   <meta name="description" content="Louise Durieu, professeure de Yoga Vinyasa, Prénatal/Postnatal et Senior à La Garenne-Colombes. Cours particuliers au cabinet ou à domicile à Asnières, Colombes, Courbevoie." />
+  <link rel="canonical" href="https://www.solyo.fr/yoga" />
 </Helmet>
       {/* Barre de navigation */}
       <header className="fixed w-full bg-cream shadow z-50">

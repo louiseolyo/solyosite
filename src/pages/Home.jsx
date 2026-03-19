@@ -107,6 +107,7 @@ Cabinet, domicile ou visio."/>
       "serviceArea": ["La Garenne-Colombes", "Courbevoie", "Colombes", "Bois-Colombes", "Asnières-sur-Seine"]
     }
   `}</script>
+  <link rel="canonical" href="https://www.solyo.fr/" />
 </Helmet>
 
     <div className="min-h-screen bg-cream text-charbon font-sans scroll-smooth">
