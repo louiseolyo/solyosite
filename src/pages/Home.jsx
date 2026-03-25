@@ -337,12 +337,101 @@ export default function Home() {
         </section>
 
         {/* TÉMOIGNAGES */}
-        <section id="temoignages" ref={temoignagesRef} className="bg-white py-20 px-6">
-          <h2 className="text-3xl font-bold text-center text-terra mb-12">Témoignages</h2>
-          <div className="max-w-3xl mx-auto px-0">
-            <div dangerouslySetInnerHTML={{ __html: `<div class="elfsight-app-140b7d95-fb84-4e13-891c-bedfe62f33cd"></div>` }} />
-          </div>
-        </section>
+<section id="temoignages" className="bg-white py-20 px-6">
+  <h2 className="text-3xl font-bold text-center text-terra mb-12">Témoignages</h2>
+
+  <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+
+    {/* Christine */}
+    <div className="bg-cream rounded-xl shadow-md p-6 flex flex-col gap-3">
+      <div className="flex items-center gap-1 text-yellow-400 text-sm">★★★★★</div>
+      <p className="text-charbon text-sm leading-relaxed italic flex-grow">
+        "En plus d'être une prof de Yoga exceptionnelle, en Sophrologie Louise a été d'une très grande aide pour mon fils qui faisait de grosses crises d'angoisse très handicapantes. Il est à présent capable de les gérer et a retrouvé confiance en lui. Disponible, à l'écoute, bienveillante et très professionnelle. Je recommande à 150%."
+      </p>
+      <div className="mt-2">
+        <p className="text-sm font-semibold text-charbon">Christine A.</p>
+        <p className="text-xs text-sage">Sophrologie & Yoga · octobre 2025</p>
+      </div>
+    </div>
+
+    {/* Amandine */}
+    <div className="bg-cream rounded-xl shadow-md p-6 flex flex-col gap-3">
+      <div className="flex items-center gap-1 text-yellow-400 text-sm">★★★★★</div>
+      <p className="text-charbon text-sm leading-relaxed italic flex-grow">
+        "Louise est attentive, à l'écoute et apaisante. Elle prend le temps d'écouter les ressentis et s'adapte constamment. Grâce à ses enseignements, il est possible de pratiquer seule les séances, ce qui permet de refaire les exercices en autonomie. J'ai vu d'immenses bienfaits par rapport au stress que je ressentais, que je sais dorénavant maîtriser davantage. Un énorme merci pour son professionnalisme et sa gentillesse."
+      </p>
+      <div className="mt-2">
+        <p className="text-sm font-semibold text-charbon">Amandine D.</p>
+        <p className="text-xs text-sage">Sophrologie · août 2025</p>
+      </div>
+    </div>
+
+    {/* Inès */}
+    <div className="bg-cream rounded-xl shadow-md p-6 flex flex-col gap-3">
+      <div className="flex items-center gap-1 text-yellow-400 text-sm">★★★★★</div>
+      <p className="text-charbon text-sm leading-relaxed italic flex-grow">
+        "Les cours de yoga prénatal que je suis avec Louise depuis 4 mois sont devenus un indispensable de ma préparation ! Avec bienveillance, douceur et humour, Louise guide chaque participante individuellement. En plus des séances, je ressors toujours avec des exercices utiles pour mieux vivre ma grossesse. Louise intègre même quelques aspects de sophrologie pour encore plus de bien-être. Je recommande à 100% !"
+      </p>
+      <div className="mt-2">
+        <p className="text-sm font-semibold text-charbon">Inès D.</p>
+        <p className="text-xs text-sage">Yoga prénatal · février 2026</p>
+      </div>
+    </div>
+
+    {/* Cérine */}
+    <div className="bg-cream rounded-xl shadow-md p-6 flex flex-col gap-3">
+      <div className="flex items-center gap-1 text-yellow-400 text-sm">★★★★★</div>
+      <p className="text-charbon text-sm leading-relaxed italic flex-grow">
+        "J'ai appris à mieux gérer mon stress, à me reconnecter à mon corps et à retrouver un vrai apaisement intérieur. Sa voix, sa présence et sa capacité d'écoute m'ont permis de me sentir en confiance très rapidement. Elle propose aussi des cours de yoga, que j'ai testés et que je recommande vivement : ils sont parfaitement complémentaires à la sophrologie. Un accompagnement précieux."
+      </p>
+      <div className="mt-2">
+        <p className="text-sm font-semibold text-charbon">Cérine V.</p>
+        <p className="text-xs text-sage">Sophrologie & Yoga · mai 2025</p>
+      </div>
+    </div>
+
+    {/* Justine */}
+    <div className="bg-cream rounded-xl shadow-md p-6 flex flex-col gap-3">
+      <div className="flex items-center gap-1 text-yellow-400 text-sm">★★★★★</div>
+      <p className="text-charbon text-sm leading-relaxed italic flex-grow">
+        "J'ai commencé le yoga avec Louise il y a trois ans, ses séances sont à la fois douces et intenses, toujours adaptées au rythme de chacun. Louise est bienveillante, à l'écoute, et toujours dans le juste équilibre entre effort, détente et ancrage. Un vrai moment pour soi, que je recommande. 🧘🏼‍♀️"
+      </p>
+      <div className="mt-2">
+        <p className="text-sm font-semibold text-charbon">Justine M.</p>
+        <p className="text-xs text-sage">Yoga · juillet 2025</p>
+      </div>
+    </div>
+
+    {/* Julia */}
+    <div className="bg-cream rounded-xl shadow-md p-6 flex flex-col gap-3">
+      <div className="flex items-center gap-1 text-yellow-400 text-sm">★★★★★</div>
+      <p className="text-charbon text-sm leading-relaxed italic flex-grow">
+        "Prendre un cours de yoga avec Louise, c'est un doux mélange de dynamisme, d'intensité, de douceur et de bien-être ! On est de suite embarqué par sa voix, sa connaissance du corps. Son enseignement est adapté à tous les corps, à tous les niveaux. Elle est aussi drôle que douce et chacun de ses cours nous permet de nous reconnecter à nos sensations."
+      </p>
+      <div className="mt-2">
+        <p className="text-sm font-semibold text-charbon">Julia D.</p>
+        <p className="text-xs text-sage">Yoga · juin 2025</p>
+      </div>
+    </div>
+
+  </div>
+
+  {/* Lien Google */}
+  <div className="text-center mt-10">
+    <a
+      href="https://www.google.com/maps/place/Louise+DURIEU+-+Sophrologue+et+Professeure+de+Yoga+-+SoLyo/@48.9097607,2.2422961,714m/data=!3m1!1e3!4m8!3m7!1s0x47e66fc222ea6bf9:0x6718d404075ce752!8m2!3d48.9097607!4d2.244871!9m1!1b1!16s%2Fg%2F11x61vpj04?entry=ttu&g_ep=EgoyMDI2MDMyMi4wIKXMDSoASAFQAw%3D%3D"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex items-center gap-2 text-sage hover:text-olive underline text-sm transition"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/>
+      </svg>
+      Voir plus d'avis sur Google →
+    </a>
+  </div>
+</section>
+
 
         {/* TARIFS */}
         <section id="tarifs" className="bg-olive/30 py-20 px-6">
