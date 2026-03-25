@@ -44,7 +44,7 @@ export default function CarteCadeau() {
     <div className="min-h-screen bg-cream text-charbon font-sans">
       <Helmet>
         <title>Carte cadeau massage prénatal – SoLyo | Louise Durieu</title>
-        <meta name="description" content="Offrez un massage bien-être prénatal à La Garenne-Colombes. Carte cadeau disponible dès maintenant, séances à partir de juin 2026." />
+        <meta name="description" content="Offrez un massage prénatal bien-être à La Garenne-Colombes. Idée cadeau grossesse, cadeau naissance ou liste de naissance. Séances disponibles dès juin 2026." />
         <link rel="canonical" href="https://www.solyo.fr/carte-cadeau" />
       </Helmet>
 

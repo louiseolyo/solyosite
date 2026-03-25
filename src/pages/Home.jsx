@@ -71,7 +71,7 @@ export default function Home() {
     <>
       <Helmet>
         <title>Sophrologue et professeure de yoga à La Garenne-Colombes | SoLyo</title>
-        <meta name="description" content="Louise Durieu, sophrologue et professeure de yoga à La Garenne-Colombes. Yoga Vinyasa, Prénatal, Senior. Sophrologie stress, grossesse, cancérologie. Cabinet, domicile ou visio." />
+        <meta name="description" content="Louise Durieu, sophrologue et professeure de yoga à La Garenne-Colombes. Yoga Vinyasa, Prénatal, Senior. Sophrologie stress, grossesse, cancérologie. Massage bien-être prénatal dès juin 2026. Cabinet, domicile ou visio." />
         <script type="application/ld+json">{`
           {
             "@context": "https://schema.org",
