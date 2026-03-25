@@ -15,9 +15,10 @@ export default function Sophrologie() {
   <link rel="canonical" href="https://www.solyo.fr/sophrologie" />
 </Helmet>
 
-      {/* Barre de navigation */}
+  {/* Barre de navigation */}
       <header className="fixed w-full bg-cream shadow z-50">
-        <div className="max-w-6xl mx-auto px-4 py-3 md:py-6 flex items-center relative">
+        <div className="max-w-6xl mx-auto px-4 py-3 lg:py-6 flex items-center relative">
+          {/* Logo */}
           <Link to="/" className="absolute left-4 top-1/2 -translate-y-1/2">
             <img
               src="/img/logo-fonce.webp"
@@ -26,41 +27,58 @@ export default function Sophrologie() {
             />
           </Link>
 
+          {/* Bouton burger mobile */}
           <button
-            className="md:hidden text-sage ml-auto"
+            className="lg:hidden text-sage ml-auto"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Menu"
           >
-            <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                d={menuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} />
+            <svg
+              className="w-7 h-7"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d={
+                  menuOpen
+                    ? "M6 18L18 6M6 6l12 12"
+                    : "M4 6h16M4 12h16M4 18h16"
+                }
+              />
             </svg>
           </button>
 
-          <nav className="hidden md:flex ml-auto items-center gap-8 text-sm md:text-base lg:text-lg">
-            <a href="/#about" className="hover:text-sage">Qui suis-je ?</a>
-            <Link to="/yoga" className="hover:text-sage">Yoga</Link>
-            <Link to="/sophrologie" className="hover:text-sage">Sophrologie</Link>
-            <a href="/#temoignages" className="hover:text-sage">Témoignages</a>
-            <a href="/#tarifs" className="hover:text-sage">Tarifs</a>
-            <a href="/#rdv" className="hover:text-sage">Rendez-vous</a>
-            <a href="/#contact" className="hover:text-sage">Contact</a>
-            <Link to="/blog" className="hover:text-sage">Blog</Link>
-          </nav>
-        </div>
+          {/* Menu desktop */}
+         <nav className="hidden lg:flex ml-auto items-center gap-8 text-sm md:text-base lg:text-lg">
+      <Link to="/sophrologie" className="hover:text-sage">Sophrologie</Link>
+      <Link to="/yoga" className="hover:text-sage">Yoga</Link>
+      <a href="/#about" className="hover:text-sage">Qui suis-je ?</a>
+      <a href="/#temoignages" className="hover:text-sage">Témoignages</a>
+      <a href="/#tarifs" className="hover:text-sage">Tarifs</a>
+      <a href="/#rdv" className="hover:text-sage">Rendez-vous</a>
+      <a href="/#contact" className="hover:text-sage">Contact</a>
+      <Link to="/blog" className="hover:text-sage font-semibold">Blog</Link>
+    </nav>
+  </div>
 
-        {menuOpen && (
-          <div className="md:hidden bg-cream border-t px-4 pb-4">
-            <nav className="flex flex-col space-y-2 text-sm text-sage">
-              <a href="/#about" onClick={() => setMenuOpen(false)}>Qui suis-je</a>
-              <Link to="/yoga" onClick={() => setMenuOpen(false)}>Yoga</Link>
-              <Link to="/sophrologie" onClick={() => setMenuOpen(false)}>Sophrologie</Link>
-              <a href="/#temoignages" onClick={() => setMenuOpen(false)}>Témoignages</a>
-              <a href="/#tarifs" onClick={() => setMenuOpen(false)}>Tarifs</a>
-              <a href="/#rdv" onClick={() => setMenuOpen(false)}>Rendez-vous</a>
-              <a href="/#contact" onClick={() => setMenuOpen(false)}>Contact</a>
-              <Link to="/blog" onClick={() => setMenuOpen(false)}>Blog</Link>
-            </nav>
+  {/* Menu mobile déroulant */}
+  {menuOpen && (
+    <div className="lg:hidden bg-cream border-t px-4 pb-4">
+      <nav className="flex flex-col space-y-2 text-sm text-sage">
+        <Link to="/sophrologie" onClick={() => setMenuOpen(false)}>Sophrologie</Link>
+        <Link to="/yoga" onClick={() => setMenuOpen(false)}>Yoga</Link>
+        <a href="/#temoignages" onClick={() => setMenuOpen(false)}>Témoignages</a>
+        <a href="/#about" onClick={() => setMenuOpen(false)}>Qui suis-je ?</a>
+        <a href="/#tarifs" onClick={() => setMenuOpen(false)}>Tarifs</a>
+        <a href="/#rdv" onClick={() => setMenuOpen(false)}>Rendez-vous</a>
+        <a href="/#contact" onClick={() => setMenuOpen(false)}>Contact</a>
+        <Link to="/blog" onClick={() => setMenuOpen(false)}>Blog</Link>
+      </nav>
           </div>
         )}
       </header>
