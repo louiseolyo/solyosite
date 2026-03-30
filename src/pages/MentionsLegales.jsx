@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import Navbar from "../components/Navbar";
 export default function MentionsLegales() {
   return (
     <div className="bg-white min-h-screen py-16 px-6">

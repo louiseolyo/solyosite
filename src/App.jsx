@@ -6,6 +6,7 @@ import MentionsLegales from "./pages/MentionsLegales.jsx";
 import Blog from "./pages/Blog.jsx";
 import BlogArticle from "./pages/BlogArticle.jsx";
 import CarteCadeau from "./pages/CarteCadeau";
+import SophrologieEntreprise from "./pages/SophrologieEntreprise";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/blog/:slug" element={<BlogArticle />} />
         <Route path="*" element={<Home />} />
         <Route path="/carte-cadeau" element={<CarteCadeau />} />
+        <Route path="/sophrologie/entreprises" element={<SophrologieEntreprise />} />
       </Routes>
     </Router>
   );

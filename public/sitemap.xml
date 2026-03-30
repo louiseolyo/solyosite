@@ -36,4 +36,10 @@
     <priority>0.3</priority>
     <changefreq>yearly</changefreq>
   </url>
+  <url>
+  <loc>https://www.solyo.fr/sophrologie/entreprises</loc>
+  <lastmod>2026-03-30</lastmod>
+  <priority>0.8</priority>
+  <changefreq>monthly</changefreq>
+</url>
 </urlset>

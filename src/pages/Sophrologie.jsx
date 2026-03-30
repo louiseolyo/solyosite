@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import Navbar from "../components/Navbar";
 
 export default function Sophrologie() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,73 +16,7 @@ export default function Sophrologie() {
   <link rel="canonical" href="https://www.solyo.fr/sophrologie" />
 </Helmet>
 
-  {/* Barre de navigation */}
-      <header className="fixed w-full bg-cream shadow z-50">
-        <div className="max-w-6xl mx-auto px-4 py-3 lg:py-6 flex items-center relative">
-          {/* Logo */}
-          <Link to="/" className="absolute left-4 top-1/2 -translate-y-1/2">
-            <img
-              src="/img/logo-fonce.webp"
-              alt="SoLyo - Louise Durieu"
-              className="h-14 md:h-24 w-auto opacity-90 pointer-events-auto"
-            />
-          </Link>
-
-          {/* Bouton burger mobile */}
-          <button
-            className="lg:hidden text-sage ml-auto"
-            onClick={() => setMenuOpen(!menuOpen)}
-            aria-label="Menu"
-          >
-            <svg
-              className="w-7 h-7"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d={
-                  menuOpen
-                    ? "M6 18L18 6M6 6l12 12"
-                    : "M4 6h16M4 12h16M4 18h16"
-                }
-              />
-            </svg>
-          </button>
-
-          {/* Menu desktop */}
-         <nav className="hidden lg:flex ml-auto items-center gap-8 text-sm md:text-base lg:text-lg">
-      <Link to="/sophrologie" className="hover:text-sage">Sophrologie</Link>
-      <Link to="/yoga" className="hover:text-sage">Yoga</Link>
-      <a href="/#about" className="hover:text-sage">Qui suis-je ?</a>
-      <a href="/#temoignages" className="hover:text-sage">Témoignages</a>
-      <a href="/#tarifs" className="hover:text-sage">Tarifs</a>
-      <a href="/#rdv" className="hover:text-sage">Rendez-vous</a>
-      <a href="/#contact" className="hover:text-sage">Contact</a>
-      <Link to="/blog" className="hover:text-sage font-semibold">Blog</Link>
-    </nav>
-  </div>
-
-  {/* Menu mobile déroulant */}
-  {menuOpen && (
-    <div className="lg:hidden bg-cream border-t px-4 pb-4">
-      <nav className="flex flex-col space-y-2 text-sm text-sage">
-        <Link to="/sophrologie" onClick={() => setMenuOpen(false)}>Sophrologie</Link>
-        <Link to="/yoga" onClick={() => setMenuOpen(false)}>Yoga</Link>
-        <a href="/#temoignages" onClick={() => setMenuOpen(false)}>Témoignages</a>
-        <a href="/#about" onClick={() => setMenuOpen(false)}>Qui suis-je ?</a>
-        <a href="/#tarifs" onClick={() => setMenuOpen(false)}>Tarifs</a>
-        <a href="/#rdv" onClick={() => setMenuOpen(false)}>Rendez-vous</a>
-        <a href="/#contact" onClick={() => setMenuOpen(false)}>Contact</a>
-        <Link to="/blog" onClick={() => setMenuOpen(false)}>Blog</Link>
-      </nav>
-          </div>
-        )}
-      </header>
+ <Navbar />
 
       {/* Contenu page Sophrologie */}
       <main className="pt-32 bg-sage/10 min-h-screen">
@@ -139,13 +74,14 @@ export default function Sophrologie() {
 
           {/* Cartes thématiques - ligne 2 centrée */}
           <div className="grid gap-6 md:grid-cols-2 max-w-3xl mx-auto mt-6">
-            <div className="bg-white rounded-xl shadow-md p-6 flex flex-col">
-              <h2 className="text-xl font-semibold mb-2">Sophrologie en entreprise</h2>
-              <p className="text-sage text-sm">
-                Accompagner vos équipes face au stress, prévenir le burn-out et favoriser le bien-être au travail.
-                Ateliers collectifs ou séances individuelles, sur site ou à distance.
-              </p>
-            </div>
+            <Link to="/sophrologie/entreprises" className="bg-white rounded-xl shadow-md p-6 flex flex-col hover:shadow-lg transition group">
+    <h2 className="text-xl font-semibold mb-2 group-hover:text-terra transition">Sophrologie en entreprise</h2>
+    <p className="text-sage text-sm">
+      Accompagner vos équipes face au stress, prévenir le burn-out et favoriser le bien-être au travail.
+      Ateliers collectifs ou séances individuelles, sur site ou à distance.
+    </p>
+    <span className="mt-4 text-xs text-terra font-medium">En savoir plus →</span>
+  </Link>
 
             <div className="bg-white rounded-xl shadow-md p-6 flex flex-col">
               <h2 className="text-xl font-semibold mb-2">Sophrologie & Seniors</h2>
