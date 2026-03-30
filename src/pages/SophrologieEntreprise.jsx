@@ -11,7 +11,7 @@ export default function SophrologieEntreprise() {
     <div className="min-h-screen bg-cream text-charbon font-sans scroll-smooth">
       <Helmet>
         <title>Sophrologie en entreprise – Bien-être au travail & QVCT | SoLyo Louise Durieu</title>
-        <meta name="description" content="Sophrologie en entreprise en Île-de-France. Ateliers QVCT, gestion du stress, prévention burn-out, cohésion d'équipe. Louise Durieu, sophrologue certifiée RNCP. Devis sur demande." />
+        <meta name="description" content="Sophrologie en entreprise en Île-de-France. Ateliers QVCT, gestion du stress, prévention burn-out, cohésion d'équipe. Séances individuelles et collectives. Louise Durieu, sophrologue certifiée RNCP. Devis gratuit." />
         <link rel="canonical" href="https://www.solyo.fr/sophrologie/entreprises" />
       </Helmet>
 
