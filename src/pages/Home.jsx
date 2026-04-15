@@ -413,14 +413,14 @@ export default function Home() {
               <div className="bg-cream rounded-lg p-6 shadow">
                 <h4 className="font-semibold text-sage mb-2">Cours individuels</h4>
                 <ul className="text-sm text-charbon space-y-1">
-                  <li>🧘‍♀️ Au cabinet : <span className="text-charbon">50 €</span></li>
-                  <li>🏠 À domicile : <span className="text-charbon">60 €</span></li>
+                  <li>🧘‍♀️ Au cabinet : <span className="text-charbon">60 €</span></li>
+                  <li>🏠 À domicile : <span className="text-charbon">75 €</span></li>
                 </ul>
               </div>
               <div className="bg-cream rounded-lg p-6 shadow">
                 <h4 className="font-semibold text-sage mb-2">Cours collectifs</h4>
                 <ul className="text-sm text-charbon space-y-1">
-                  <li>🏠 À domicile : <span className="text-charbon">60€/h (15€/personne au delà de 4 personnes)</span></li>
+                  <li>🏠 À domicile : <span className="text-charbon">75€/h (15€/personne au delà de 5 personnes)</span></li>
                 </ul>
               </div>
             </div>
@@ -431,19 +431,19 @@ export default function Home() {
               <div className="bg-cream rounded-lg p-6 shadow">
                 <h4 className="font-semibold text-sage mb-2">Séances individuelles</h4>
                 <ul className="text-sm text-charbon space-y-1">
-                  <li>🧘‍♂️ Au cabinet : <span className="text-charbon">60 € (1ère séance : 65€)</span></li>
-                  <li>🏠 À domicile (proche cabinet) : <span className="text-charbon">75 € (1ère séance : 85 €)</span></li>
+                  <li>🧘‍♂️ Au cabinet : <span className="text-charbon">60 €</span></li>
+                  <li>🏠 À domicile (proche cabinet) : <span className="text-charbon">75 €</span></li>
                 </ul>
                 <p className="text-sm text-sage mt-3 italic">Étudiants / Demandeur d'emploi : -15€ par séance</p>
               </div>
               <div className="bg-cream rounded-lg p-6 shadow">
                 <h4 className="font-semibold text-sage mb-2">Accompagnements en programme</h4>
                 <ul className="text-sm text-charbon space-y-1">
-                  <li>• 6 séances : <span className="text-charbon">330 €</span> <span className="text-terra">(au lieu de 365 €)</span></li>
-                  <li>• 8 séances : <span className="text-charbon">420 €</span> <span className="text-terra">(au lieu de 485 €)</span></li>
-                  <li>• 10 séances : <span className="text-charbon">520 €</span> <span className="text-terra">(au lieu de 605 €)</span></li>
+                  <li>• 6 séances : <span className="text-charbon">360 €</span></li>
+                  <li>• 8 séances : <span className="text-charbon">480 €</span></li>
+                  <li>• 10 séances : <span className="text-charbon">600 €</span> </li>
                 </ul>
-                <p className="text-sm text-sage mt-3 italic">Possibilité de paiement en 2 fois</p>
+                <p className="text-sm text-sage mt-3 italic">Possibilité de paiement en 2 ou 3 fois</p>
               </div>
               <div className="bg-cream rounded-lg p-6 shadow">
                 <h4 className="font-semibold text-sage mb-2">Séances collectives</h4>
