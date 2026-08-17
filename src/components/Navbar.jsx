@@ -7,7 +7,7 @@ export default function Navbar() {
   const [sophroOpen, setSophroOpen] = useState(false);
 
   return (
-    <header className="fixed w-full bg-cream shadow z-50">
+    <header className="fixed top-0 w-full bg-cream shadow z-50">
       <div className="max-w-6xl mx-auto px-4 py-3 lg:py-6 flex items-center relative">
         <Link to="/" className={`absolute left-4 top-1/2 -translate-y-1/2 ${menuOpen ? 'pointer-events-none' : ''}`}>
   <img src="/img/logo-fonce.webp" alt="SoLyo - Louise Durieu" className="h-14 md:h-24 w-auto opacity-90" />

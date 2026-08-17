@@ -73,7 +73,7 @@ export default function Home() {
     <>
       <Helmet>
         <title>Sophrologue et professeure de yoga à La Garenne-Colombes | SoLyo</title>
-        <meta name="description" content="Louise Durieu, sophrologue et professeure de yoga à La Garenne-Colombes. Yoga Vinyasa, Prénatal, Senior. Sophrologie stress, grossesse, cancérologie. Massage bien-être prénatal dès juin 2026. Cabinet, domicile ou visio." />
+        <meta name="description" content="Louise Durieu, sophrologue et professeure de yoga à La Garenne-Colombes. Yoga Vinyasa, Prénatal, Senior. Sophrologie stress, grossesse, cancérologie, cancer du sein, accompagnement oncologie, sophrologie pendant les traitements. Cabinet à La Garenne-Colombes, domicile ou visio." />
         <script type="application/ld+json">{`
           {
             "@context": "https://schema.org",
@@ -170,40 +170,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* MASSAGE PRÉNATAL */}
-        <section className="bg-white py-16 px-6">
-          <div className="max-w-5xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-10 items-center">
-              <img src="/img/massage-prenatal.webp" alt="Massage bien-être prénatal"
-                className="rounded-2xl shadow-md w-full h-72 object-cover" />
-              <div className="flex flex-col gap-4">
-                <span className="inline-block bg-terra/10 text-terra text-xs font-semibold px-3 py-1 rounded-full w-fit">
-                  🌿 Nouveauté — disponible dès juin 2026
-                </span>
-                <h2 className="text-2xl md:text-3xl font-bold text-charbon">
-                  Massage bien-être prénatal, postnatal & bébé
-                </h2>
-                <p className="text-charbon text-sm leading-relaxed">
-                  Un moment de douceur et de détente totale, entièrement dédié aux futures et jeunes mamans, ainsi qu'aux bébés. Une pratique douce, respectueuse et apaisante pour accompagner ce temps précieux.
-                </p>
-                <p className="text-sage text-sm italic">
-                  Les séances débuteront en juin 2026 au cabinet de La Garenne-Colombes.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-3 mt-2">
-                  <Link to="/carte-cadeau"
-  className="inline-block bg-terra hover:bg-sage text-white px-6 py-3 rounded-full text-sm transition text-center">
-  🎁 Offrir une carte cadeau
-</Link>
-                  <a href="#contact"
-                    className="inline-block border border-terra text-terra hover:bg-terra hover:text-white px-6 py-3 rounded-full text-sm transition text-center">
-                    📋 Ajouter à une liste de naissance
-                  </a>
-                </div>
-                <p className="text-xs text-charbon/60 mt-1">Pour toute demande, contactez-moi directement.</p>
-              </div>
-            </div>
-          </div>
-        </section>
+      
 
         {/* SOPHROLOGIE */}
         <section id="sophrologie" className="bg-sage/10 py-20 px-6">
@@ -281,27 +248,26 @@ export default function Home() {
             <Link to="/yoga" className="text-sage underline hover:text-olive text-sm">En savoir plus sur le Yoga →</Link>
           </div>
         </section>
-
-        {/* QUI SUIS-JE */}
-        <section id="about" className="bg-sage py-20 px-6">
-          <h2 className="text-3xl font-bold text-center text-white mb-8">Qui suis-je ?</h2>
-          <div className="max-w-5xl mx-auto space-y-10">
-            <div className="grid md:grid-cols-3 gap-10">
-              <div className="md:col-span-1 flex items-center">
-                <img src="/img/moi.webp" alt="Louise Durieu" className="w-full h-auto rounded-xl object-cover shadow-lg" />
-              </div>
-              <div className="md:col-span-2 space-y-6 text-md text-white flex flex-col justify-center leading-relaxed text-justify">
-                <p>Je m'appelle Louise Durieu. J'ai toujours eu à cœur de prendre soin des autres et aime mettre mon énergie au profit de mes clients (sophronisants ou élèves de yoga).</p>
-                <p>Après des années de danse (niveau professionnel, castings...) et de comptabilité et finances en parallèle, c'est en 2015 que je me tourne vers le yoga pour ralentir et m'écouter davantage. Je me forme et deviens professeur de yoga en 2021.</p>
-                <p>Je me forme la même année en yoga prénatal, yoga enfants et yoga seniors. L'expérience inoubliable de ma grossesse en 2019 me donne particulièrement envie d'accompagner les femmes enceintes et venant d'accoucher. Depuis, je continue de me former régulièrement notamment en anatomie pour accompagner au mieux toutes les morphologies et toutes les pathologies. En 2024, je quitte mon métier de responsable administrative et financière pour devenir sophrologue et partage maintenant mon temps entre ces deux activités bien-être (dans divers studios et au cabinet), et la musique qui est ma passion première.</p>
-              </div>
-            </div>
-            <div className="space-y-6 text-md text-white leading-relaxed text-justify">
-              <p>Je vous guide vers une pratique adaptée à vos besoins le tout dans la détente, la bonne humeur et la douceur que ce soit en yoga ou en sophrologie. L'union des deux disciplines peut mêler le mouvement conscient du yoga à l'écoute intérieure de la sophrologie pour proposer un accompagnement complet, respectueux et humain.</p>
-              <p>Je travaille aussi bien avec des particuliers qu'en structures ou en entreprises, dans une logique d'ancrage, de mieux-être et d'autonomie.</p>
-            </div>
-          </div>
-        </section>
+{/* QUI SUIS-JE */}
+<section id="about" className="bg-sage py-20 px-6">
+  <h2 className="text-3xl font-bold text-center text-white mb-8">Qui suis-je ?</h2>
+  <div className="max-w-5xl mx-auto space-y-10">
+    <div className="grid md:grid-cols-3 gap-10">
+      <div className="md:col-span-1 flex items-center">
+        <img src="/img/moi.webp" alt="Louise Durieu" className="w-full h-auto rounded-xl object-cover shadow-lg" />
+      </div>
+      <div className="md:col-span-2 space-y-6 text-md text-white flex flex-col justify-center leading-relaxed text-justify">
+        <p>Je m'appelle Louise Durieu. J'ai toujours eu à cœur de prendre soin des autres et aime mettre mon énergie au profit de mes clients — sophronisants ou élèves de yoga.</p>
+        <p>Après des années de danse et de comptabilité-finances en parallèle, c'est en 2015 que je me tourne vers le yoga pour ralentir et m'écouter davantage. Je deviens professeure de yoga en 2021, puis <strong>sophrologue certifiée RNCP en 2024</strong>, après avoir quitté mon poste de responsable administrative et financière.</p>
+        <p>Ma grossesse en 2019 m'a donné l'envie profonde d'accompagner <strong>les femmes enceintes et jeunes mamans</strong>. Et plus récemment, c'est ma propre expérience d'un <strong>cancer du sein</strong> — et des traitements qui vont avec — qui m'a amenée à me spécialiser dans l'accompagnement des personnes touchées par la maladie. Je connais de l'intérieur ce que traversent les patients : <strong>l'annonce</strong>, les soins, la fatigue, la peur, <strong>la reconstruction</strong>. C'est ce vécu qui nourrit aujourd'hui mon accompagnement — avec une écoute que seule l'expérience peut donner.</p>
+      </div>
+    </div>
+    <div className="space-y-6 text-md text-white leading-relaxed text-justify">
+      <p>J'accompagne tous types de cancers et de pathologies, hommes et femmes, à toutes les étapes : <strong>de l'annonce aux traitements</strong>, jusqu'à la reconstruction et l'après. J'accompagne également les personnes pour une <strong>fin de vie</strong> douce et plus sereine.</p>
+      <p>Je vous guide vers une pratique adaptée à vos besoins, dans la détente, <strong>la bonne humeur et la douceur</strong> — en yoga comme en sophrologie. Et parce que la musique est ma passion première, j'apporte aussi cette sensibilité à chaque séance.</p>
+    </div>
+  </div>
+</section>
 
         {/* TÉMOIGNAGES */}
 <section id="temoignages" className="bg-white py-20 px-6">
@@ -407,24 +373,6 @@ export default function Home() {
             <p className="text-md mb-4">Des ateliers découvertes de Sophrologie seront régulièrement organisés, n'hésitez pas à me contacter pour avoir les dates.</p>
             <p className="text-md text-sage">Il est possible de demander une séance mélangeant yoga et sophrologie, dans ce cas le tarif de la sophrologie s'applique.</p>
           </div>
-          <div className="max-w-5xl mx-auto mb-16">
-            <h3 className="text-xl font-semibold text-charbon mb-6 border-b pb-2">Yoga</h3>
-            <div className="grid gap-6 md:grid-cols-2">
-              <div className="bg-cream rounded-lg p-6 shadow">
-                <h4 className="font-semibold text-sage mb-2">Cours individuels</h4>
-                <ul className="text-sm text-charbon space-y-1">
-                  <li>🧘‍♀️ Au cabinet : <span className="text-charbon">60 €</span></li>
-                  <li>🏠 À domicile : <span className="text-charbon">75 €</span></li>
-                </ul>
-              </div>
-              <div className="bg-cream rounded-lg p-6 shadow">
-                <h4 className="font-semibold text-sage mb-2">Cours collectifs</h4>
-                <ul className="text-sm text-charbon space-y-1">
-                  <li>🏠 À domicile : <span className="text-charbon">75€/h (15€/personne au delà de 5 personnes)</span></li>
-                </ul>
-              </div>
-            </div>
-          </div>
           <div className="max-w-5xl mx-auto">
             <h3 className="text-xl font-semibold text-charbon mb-6 border-b pb-2">Sophrologie</h3>
             <div className="grid gap-6 md:grid-cols-2">
@@ -453,6 +401,24 @@ export default function Home() {
               </div>
             </div>
           </div>
+                    <div className="max-w-5xl mx-auto mt-16">
+            <h3 className="text-xl font-semibold text-charbon mb-6 border-b pb-2">Yoga</h3>
+            <div className="grid gap-6 md:grid-cols-2">
+              <div className="bg-cream rounded-lg p-6 shadow">
+                <h4 className="font-semibold text-sage mb-2">Cours individuels</h4>
+                <ul className="text-sm text-charbon space-y-1">
+                  <li>🧘‍♀️ Au cabinet : <span className="text-charbon">60 €</span></li>
+                  <li>🏠 À domicile : <span className="text-charbon">75 €</span></li>
+                </ul>
+              </div>
+              <div className="bg-cream rounded-lg p-6 shadow">
+                <h4 className="font-semibold text-sage mb-2">Cours collectifs</h4>
+                <ul className="text-sm text-charbon space-y-1">
+                  <li>🏠 À domicile : <span className="text-charbon">75€/h (15€/personne au delà de 5 personnes)</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
           <div className="max-w-4xl mx-auto mt-12 text-center text-sm text-charbon">
             <p>💼 Cours et séances collectives en entreprise ou en structure (yoga ou sophrologie) : <span className="text-terra font-medium">devis sur demande</span>.</p>
           </div>
@@ -467,7 +433,10 @@ export default function Home() {
               className="bg-sage text-white px-6 py-3 rounded-full hover:bg-terra transition text-sm">
               Réserver un créneau via Résalib
             </a>
-            <p className="mt-10 text-charbon text-sm">Pour les rendez-vous en visio ou à domicile, merci de me contacter par téléphone ou par mail afin de définir le créneau qui vous convient.</p>
+            <p className="mt-6 text-charbon text-sm">
+  Vous hésitez ou souhaitez échanger avant de prendre rendez-vous ? <strong>N'hésitez pas à m'appeler</strong> — un premier échange téléphonique est toujours possible. 🌿
+</p>
+            <p className="mt-10 text-charbon text-sm">Pour les rendez-vous <strong>en visio ou à domicile</strong>, merci de me contacter par téléphone ou par mail afin de définir le créneau qui vous convient.</p>
           </div>
         </section>
 
