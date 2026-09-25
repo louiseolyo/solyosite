@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import Navbar from "../components/Navbar";
 
 export default function CarteCadeau() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -92,12 +93,12 @@ export default function CarteCadeau() {
           {/* En-tête */}
           <div className="text-center mb-10">
             <span className="inline-block bg-terra/10 text-terra text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              🌿 Offre ouverture cabinet — valable pour toute carte achetée avant le 30 juin 2026
+              🌿 Offre ouverture cabinet — valable pour toute carte achetée avant le 30 novembre 2026
             </span>
             <h1 className="text-3xl font-bold text-charbon mb-3">Offrir un massage prénatal</h1>
             <p className="text-sage text-sm leading-relaxed">
               Faites plaisir à une future maman avec un massage bien-être prénatal à La Garenne-Colombes.
-              Les séances débutent en juin 2026. Remplissez le formulaire ci-dessous et je vous recontacte rapidement.
+              Les séances débutent en octobre 2026. Remplissez le formulaire ci-dessous et je vous recontacte rapidement.
             </p>
           </div>
 

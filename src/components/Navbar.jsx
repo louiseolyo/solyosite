@@ -45,6 +45,7 @@ export default function Navbar() {
           </div>
 
           <Link to="/yoga" className="hover:text-sage">Yoga</Link>
+          <Link to="/massage" className="hover:text-sage">Massage</Link>
           <Link to="/#about" className="hover:text-sage">Qui suis-je ?</Link>
           <Link to="/#temoignages" className="hover:text-sage">Témoignages</Link>
           <Link to="/#tarifs" className="hover:text-sage">Tarifs</Link>
@@ -62,6 +63,7 @@ export default function Navbar() {
               → Sophrologie en entreprise
             </Link>
             <Link to="/yoga" onClick={() => setMenuOpen(false)}>Yoga</Link>
+            <Link to="/massage" onClick={() => setMenuOpen(false)}>Massage</Link>
             <Link to="/#about" onClick={() => setMenuOpen(false)}>Qui suis-je</Link>
             <Link to="/#temoignages" onClick={() => setMenuOpen(false)}>Témoignages</Link>
             <Link to="/#tarifs" onClick={() => setMenuOpen(false)}>Tarifs</Link>
