@@ -5,7 +5,6 @@ import { Helmet } from "react-helmet-async";
 import Navbar from "../components/Navbar";
 
 export default function CarteCadeau() {
-  const [menuOpen, setMenuOpen] = useState(false);
   const [formData, setFormData] = useState({
     pour: "",
     de: "",
@@ -50,42 +49,7 @@ export default function CarteCadeau() {
       </Helmet>
 
       {/* Navigation */}
-      <header className="fixed w-full bg-cream shadow z-50">
-        <div className="max-w-6xl mx-auto px-4 py-3 lg:py-6 flex items-center relative">
-          <Link to="/" className="absolute left-4 top-1/2 -translate-y-1/2">
-            <img src="/img/logo-fonce.webp" alt="SoLyo - Louise Durieu" className="h-14 lg:h-24 w-auto opacity-90" />
-          </Link>
-          <button className="lg:hidden text-sage ml-auto" onClick={() => setMenuOpen(!menuOpen)} aria-label="Menu">
-            <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={menuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} />
-            </svg>
-          </button>
-          <nav className="hidden lg:flex ml-auto items-center gap-6 text-sm lg:text-base">
-            <Link to="/sophrologie" className="hover:text-sage">Sophrologie</Link>
-            <Link to="/yoga" className="hover:text-sage">Yoga</Link>
-            <Link to="/#about" className="hover:text-sage">Qui suis-je ?</Link>
-            <Link to="/#temoignages" className="hover:text-sage">Témoignages</Link>
-            <Link to="/#tarifs" className="hover:text-sage">Tarifs</Link>
-            <Link to="/#rdv" className="hover:text-sage">Rendez-vous</Link>
-            <Link to="/#contact" className="hover:text-sage">Contact</Link>
-            <Link to="/blog" className="hover:text-sage">Blog</Link>
-          </nav>
-        </div>
-        {menuOpen && (
-          <div className="lg:hidden bg-cream border-t px-4 pb-4">
-            <nav className="flex flex-col space-y-2 text-sm text-sage">
-              <Link to="/sophrologie" onClick={() => setMenuOpen(false)}>Sophrologie</Link>
-              <Link to="/yoga" onClick={() => setMenuOpen(false)}>Yoga</Link>
-              <Link to="/" onClick={() => setMenuOpen(false)}>Qui suis-je ?</Link>
-              <Link to="/" onClick={() => setMenuOpen(false)}>Témoignages</Link>
-              <Link to="/" onClick={() => setMenuOpen(false)}>Tarifs</Link>
-              <Link to="/" onClick={() => setMenuOpen(false)}>Rendez-vous</Link>
-              <Link to="/" onClick={() => setMenuOpen(false)}>Contact</Link>
-              <Link to="/blog" onClick={() => setMenuOpen(false)}>Blog</Link>
-            </nav>
-          </div>
-        )}
-      </header>
+      <Navbar />
 
       <main className="pt-32 pb-20 px-6">
         <div className="max-w-2xl mx-auto">
