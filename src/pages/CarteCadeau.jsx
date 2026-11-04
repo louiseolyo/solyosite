@@ -15,9 +15,9 @@ export default function CarteCadeau() {
   const [submitted, setSubmitted] = useState(false);
 
   const offres = [
-    { id: "1massage", label: "1 massage prénatal 1h", prix: "70 €", detail: "Offre ouverture cabinet" },
-    { id: "2massages", label: "2 massages prénataux 1h", prix: "135 €", detail: "Au lieu de 140 €" },
-    { id: "3massages", label: "3 massages prénataux 1h", prix: "200 €", detail: "Au lieu de 210 €" },
+    { id: "1massage", label: "1 massage prénatal 1h", prix: "75 €" },
+    { id: "2massages", label: "2 massages prénataux 1h", prix: "140 €", detail: "Au lieu de 150 €" },
+    { id: "3massages", label: "3 massages prénataux 1h", prix: "210 €", detail: "Au lieu de 225 €" },
   ];
 
   function encode(data) {
@@ -56,13 +56,10 @@ export default function CarteCadeau() {
 
           {/* En-tête */}
           <div className="text-center mb-10">
-            <span className="inline-block bg-terra/10 text-terra text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              🌿 Offre ouverture cabinet — valable pour toute carte achetée avant le 30 novembre 2026
-            </span>
             <h1 className="text-3xl font-bold text-charbon mb-3">Offrir un massage prénatal</h1>
             <p className="text-sage text-sm leading-relaxed">
               Faites plaisir à une future maman avec un massage bien-être prénatal à La Garenne-Colombes.
-              Les séances débutent en octobre 2026. Remplissez le formulaire ci-dessous et je vous recontacte rapidement.
+              Remplissez le formulaire ci-dessous et je vous recontacte rapidement.
             </p>
           </div>
 

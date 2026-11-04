@@ -387,9 +387,9 @@ export default function Home() {
               <div className="bg-cream rounded-lg p-6 shadow">
                 <h4 className="font-semibold text-sage mb-2">Accompagnements en programme</h4>
                 <ul className="text-sm text-charbon space-y-1">
-                  <li>• 6 séances : <span className="text-charbon">360 €</span></li>
-                  <li>• 8 séances : <span className="text-charbon">480 €</span></li>
-                  <li>• 10 séances : <span className="text-charbon">600 €</span> </li>
+                  <li>• 6 séances : <span className="text-charbon">350 €</span></li>
+                  <li>• 8 séances : <span className="text-charbon">460 €</span></li>
+                  <li>• 10 séances : <span className="text-charbon">560 €</span> </li>
                 </ul>
                 <p className="text-sm text-sage mt-3 italic">Possibilité de paiement en 2 ou 3 fois</p>
               </div>
@@ -397,6 +397,7 @@ export default function Home() {
                 <h4 className="font-semibold text-sage mb-2">Séances collectives</h4>
                 <ul className="text-sm text-charbon space-y-1">
                   <li>🧘‍♂️ En groupe (cabinet) : <span className="text-charbon">20€/personne (3 personnes minimum)</span></li>
+                 <li>💼 En entreprises et collectivités  : <span className="text-charbon">Devis sur demande</span></li>
                 </ul>
               </div>
             </div>
@@ -408,13 +409,13 @@ export default function Home() {
                 <h4 className="font-semibold text-sage mb-2">Cours individuels</h4>
                 <ul className="text-sm text-charbon space-y-1">
                   <li>🧘‍♀️ Au cabinet : <span className="text-charbon">60 €</span></li>
-                  <li>🏠 À domicile : <span className="text-charbon">75 €</span></li>
                 </ul>
               </div>
               <div className="bg-cream rounded-lg p-6 shadow">
                 <h4 className="font-semibold text-sage mb-2">Cours collectifs</h4>
                 <ul className="text-sm text-charbon space-y-1">
-                  <li>🏠 À domicile : <span className="text-charbon">75€/h (15€/personne au delà de 5 personnes)</span></li>
+                  <li>🏠 En studios  : <span className="text-charbon">Me contacter pour le planning</span></li>
+                <li>💼 En entreprises et collectivités  : <span className="text-charbon">Devis sur demande</span></li>
                 </ul>
               </div>
             </div>

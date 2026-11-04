@@ -33,10 +33,7 @@ export default function Massage() {
                 Futures mamans, jeunes mamans, bébés… chaque soin est adapté à votre corps, à votre étape et à vos besoins du moment. En cabinet à <strong>La Garenne-Colombes</strong>, dans un espace doux, chaleureux et sécurisant.
               </p>
 
-              <div className="bg-terra/10 border border-terra/30 rounded-xl p-4">
-                <p className="text-terra font-semibold text-sm mb-1">🎁 Offre découverte — 1ère séance à 65 € au lieu de 70 €</p>
-                <p className="text-xs text-charbon">Valable pour tout rendez-vous pris du 21 octobre au 20 novembre 2026.</p>
-              </div>
+              
 
               <div className="flex flex-col sm:flex-row gap-3 mt-2">
                 <a href="https://www.resalib.fr/praticien/126130-louise-durieu-sophrologue-la-garenne-colombes"
@@ -103,7 +100,7 @@ export default function Massage() {
                   Un massage doux et enveloppant, spécialement adapté au corps de la femme enceinte. Il soulage les tensions du dos, des jambes et du bassin, améliore la circulation et favorise un profond état de relaxation. Un moment rien que pour vous deux.
                 </p>
                 <div className="mt-4 pt-4 border-t border-gray-100">
-                  <p className="text-terra font-bold text-sm">70 € / 1h</p>
+                  <p className="text-terra font-bold text-sm">75 € / 1h</p>
                   <p className="text-xs text-sage">À partir du 2ème trimestre</p>
                 </div>
               </div>
