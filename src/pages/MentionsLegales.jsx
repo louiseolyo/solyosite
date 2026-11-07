@@ -46,9 +46,8 @@ export default function MentionsLegales() {
 
     <h3 className="text-xl font-semibold mt-8 mb-2">Cookies</h3>
     <p>
-      Le site peut utiliser des cookies de mesure d’audience et de confort de navigation. Vous pouvez
-      configurer votre navigateur pour les accepter ou les refuser.
-    </p>
+  Ce site n'utilise pas de cookies de suivi ni de mesure d'audience. Certains services externes (Résalib pour la prise de rendez-vous, Google Maps, Instagram, LinkedIn) peuvent déposer leurs propres cookies si vous cliquez sur leurs liens, selon leurs propres politiques.
+</p>
 
     <h3 className="text-xl font-semibold mt-8 mb-2">Responsabilité</h3>
     <p>
@@ -57,7 +56,7 @@ export default function MentionsLegales() {
     </p>
 
     <p className="text-xs text-gray-500 mt-10">
-      Dernière mise à jour : [08/2025]
+      Dernière mise à jour : [11/2026]
         </p>
       </div>
     </div>
