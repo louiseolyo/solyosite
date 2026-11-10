@@ -1,17 +1,14 @@
 // src/pages/SophrologieEntreprise.jsx
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import Navbar from "../components/Navbar";
 
 export default function SophrologieEntreprise() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
   return (
     <div className="min-h-screen bg-cream text-charbon font-sans scroll-smooth">
       <Helmet>
         <title>Sophrologie en entreprise – Bien-être au travail & QVCT | SoLyo Louise Durieu</title>
-        <meta name="description" content="Sophrologie en entreprise en Île-de-France. Ateliers QVCT, gestion du stress, prévention burn-out, cohésion d'équipe. Séances individuelles et collectives. Louise Durieu, sophrologue certifiée RNCP. Devis gratuit." />
+        <meta name="description" content="Sophrologie en entreprise en Île-de-France. Ateliers QVCT, gestion du stress, prévention burn-out, cohésion d'équipe. Louise Durieu, sophrologue certifiée RNCP. Devis sur demande." />
         <link rel="canonical" href="https://www.solyo.fr/sophrologie/entreprises" />
       </Helmet>
 
@@ -206,7 +203,17 @@ export default function SophrologieEntreprise() {
               </p>
               <div>
                 <p className="text-sm font-semibold text-white mb-2">Quelques références :</p>
-                <p className="text-sm text-white/80">Résidence Nohée · Sensa Studio · Ismeria · Olympe · GymSpot Corporate · EPCM</p>
+                <p className="text-sm text-white/80">
+                  <a
+                    href="https://lnkd.in/p/e-iQVRq4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:text-white"
+                  >
+                    Pavillon d'Armenonville (groupe Butard Enescot)
+                  </a>
+                  {" "}· Résidence Nohée · Sensa Studio · Ismeria · Olympe · GymSpot Corporate · EPCM
+                </p>
               </div>
             </div>
           </div>
