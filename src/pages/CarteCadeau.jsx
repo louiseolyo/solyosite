@@ -9,16 +9,20 @@ export default function CarteCadeau() {
     pour: "",
     de: "",
     offre: "",
+    montantLibre: "",
     message: "",
     email: "",
   });
   const [submitted, setSubmitted] = useState(false);
 
   const offres = [
-    { id: "1massage", label: "1 massage prénatal 1h", prix: "75 €" },
-    { id: "2massages", label: "2 massages prénataux 1h", prix: "140 €", detail: "Au lieu de 150 €" },
-    { id: "3massages", label: "3 massages prénataux 1h", prix: "210 €", detail: "Au lieu de 225 €" },
+    { id: "60", label: "1 séance de sophrologie", prix: "60 €", detail: "Séance individuelle" },
+    { id: "75", label: "1 massage prénatal (1h)", prix: "75 €", detail: "Ou toute autre prestation à 75 €" },
+    { id: "135", label: "Carte de 135 €", prix: "135 €", detail: "Une séance de sophrologie + un massage" },
+    { id: "libre", label: "Montant libre", prix: "Vous choisissez", detail: "À partir de 30 €" },
   ];
+
+  const montantOk = formData.offre !== "libre" || Number(formData.montantLibre) >= 30;
 
   function encode(data) {
     return Object.keys(data)
@@ -43,12 +47,11 @@ export default function CarteCadeau() {
   return (
     <div className="min-h-screen bg-cream text-charbon font-sans">
       <Helmet>
-        <title>Carte cadeau massage prénatal – SoLyo | Louise Durieu</title>
-        <meta name="description" content="Offrez un massage prénatal bien-être à La Garenne-Colombes. Idée cadeau grossesse, cadeau naissance ou liste de naissance. Séances disponibles dès juin 2026." />
+        <title>Carte cadeau sophrologie & massage – SoLyo | Louise Durieu</title>
+        <meta name="description" content="Offrez une carte cadeau valable sur tous les soins de sophrologie et de massage à La Garenne-Colombes. Montant au choix : 60, 75, 135 € ou montant libre." />
         <link rel="canonical" href="https://www.solyo.fr/carte-cadeau" />
       </Helmet>
 
-      {/* Navigation */}
       <Navbar />
 
       <main className="pt-32 pb-20 px-6">
@@ -56,10 +59,14 @@ export default function CarteCadeau() {
 
           {/* En-tête */}
           <div className="text-center mb-10">
-            <h1 className="text-3xl font-bold text-charbon mb-3">Offrir un massage prénatal</h1>
+            <span className="inline-block bg-terra/10 text-terra text-xs font-semibold px-3 py-1 rounded-full mb-4">
+              🎁 Une seule carte, valable sur tous les soins
+            </span>
+            <h1 className="text-3xl font-bold text-charbon mb-3">Offrir une carte cadeau</h1>
             <p className="text-sage text-sm leading-relaxed">
-              Faites plaisir à une future maman avec un massage bien-être prénatal à La Garenne-Colombes.
-              Remplissez le formulaire ci-dessous et je vous recontacte rapidement.
+              Offrez un moment de bien-être : la carte cadeau est valable sur tous les soins de sophrologie et de massage
+              (prénatal, postnatal, bébé) à La Garenne-Colombes. Choisissez un montant, remplissez le formulaire
+              et je vous recontacte rapidement.
             </p>
           </div>
 
@@ -105,6 +112,18 @@ export default function CarteCadeau() {
                     </label>
                   ))}
                 </div>
+                {formData.offre === "libre" && (
+                  <div className="mt-4">
+                    <label className="block text-sm font-medium text-charbon mb-1">Montant souhaité (en €, minimum 30) *</label>
+                    <input
+                      type="number" min="30" step="5" required
+                      placeholder="Ex : 100"
+                      className="w-full border border-gray-300 rounded-lg p-3 text-sm focus:outline-none focus:border-sage"
+                      value={formData.montantLibre}
+                      onChange={(e) => setFormData({ ...formData, montantLibre: e.target.value })}
+                    />
+                  </div>
+                )}
               </div>
 
               {/* Formulaire */}
@@ -117,6 +136,7 @@ export default function CarteCadeau() {
               >
                 <input type="hidden" name="form-name" value="carte-cadeau" />
                 <input type="hidden" name="offre" value={formData.offre} />
+                <input type="hidden" name="montantLibre" value={formData.montantLibre} />
 
                 <div>
                   <label className="block text-sm font-medium text-charbon mb-1">
@@ -178,12 +198,12 @@ export default function CarteCadeau() {
                 </div>
 
                 <p className="text-xs text-charbon/60">
-                  Après réception de votre demande, je vous recontacte pour les modalités de paiement et l'envoi de la carte cadeau.
+                  Après réception de votre demande, je vous recontacte pour les modalités de paiement et l'envoi de la carte cadeau. La carte est valable 12 mois à compter de sa date d'émission.
                 </p>
 
                 <button
                   type="submit"
-                  disabled={!formData.offre}
+                  disabled={!formData.offre || !montantOk}
                   className="w-full bg-terra hover:bg-sage text-white px-6 py-3 rounded-full text-sm transition disabled:opacity-40 disabled:cursor-not-allowed"
                 >
                   Envoyer ma demande de carte cadeau 🎁

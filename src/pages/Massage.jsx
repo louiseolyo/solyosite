@@ -20,9 +20,7 @@ export default function Massage() {
         <section className="px-6 pb-16">
           <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
             <div className="flex flex-col gap-5">
-              <span className="inline-block bg-terra/10 text-terra text-xs font-semibold px-3 py-1 rounded-full w-fit">
-                🌿 Ouverture octobre 2026 — cabinet La Garenne-Colombes
-              </span>
+              
               <h1 className="text-3xl md:text-4xl font-bold text-charbon leading-snug">
                 Massage bien-être prénatal, postnatal et bébé
               </h1>
@@ -123,15 +121,15 @@ export default function Massage() {
               <div className="bg-white rounded-xl shadow-md p-6 flex flex-col border-t-4 border-olive">
                 <div className="flex items-center justify-between mb-3">
                   <span className="text-2xl">👶</span>
-                  <span className="bg-olive/20 text-olive text-xs font-semibold px-2 py-1 rounded-full">À venir — début 2027</span>
+                  <span className="bg-terra text-white text-xs font-semibold px-2 py-1 rounded-full">Disponible dès octobre</span>
                 </div>
                 <h3 className="text-lg font-semibold text-charbon mb-3">Massage bébé</h3>
                 <p className="text-sage text-sm flex-grow leading-relaxed">
                   Un soin doux et sécurisant pour votre tout-petit, favorisant l'éveil, le lien d'attachement et le bien-être. Un moment de complicité unique entre vous et votre bébé, guidé par une praticienne formée.
                 </p>
                 <div className="mt-4 pt-4 border-t border-gray-100">
-                  <p className="text-charbon/50 font-bold text-sm">Tarif à venir</p>
-                  <p className="text-xs text-sage">Disponible début 2027</p>
+                  <p className="text-terra font-bold text-sm">Atelier parent-bébé, tarif sur demande</p>
+                  <p className="text-xs text-sage">De la naissance à 2 ou 3 ans</p>
                 </div>
               </div>
 
